@@ -60,7 +60,9 @@ body {
   img { width: 100%; }
 }
 
-// for front page
+/*********
+FRONT PAGE
+**********/
 $front-page-lines-thick: 3px solid white;
 $front-page-lines-thin: 2px solid white;
 .front-page {
@@ -74,7 +76,7 @@ $front-page-lines-thin: 2px solid white;
   border: $front-page-lines-thick;
   //border-radius: 6px;
   box-sizing: border-box;
-  min-height: 500px !important; // can set minimum height here
+  //min-height: 500px !important; // can set minimum height here
 
   table {
     width: 100%;
