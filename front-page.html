@@ -11,42 +11,34 @@ weight: 10
   <table>
 
     <tr>
-
-      <td colspan="3"></td>
-      <td class="front-page-info front-page-news">
-
+      <td style="width: 99%;"></td>
+      <td class="front-page-news" style="">
         <p>
-        <h4>Recent news</h4>
+        <h4>Recent News</h4>
         {% for post in site.posts limit: 5 %}
-        <span class="glyphicon glyphicon-triangle-right small"></span>{{ post.title }}<br/>
+        <span class="glyphicon glyphicon-triangle-right small"></span> {{ post.title }}<br/>
         {% endfor %}
         </p>
-
-
-
       </td>
-
     </tr>
 
     <tr>
-      <td colspan="3" class="front-page-title">
+      <td colspan="2" class="front-page-title">
         <h3><a href="http://www.kopflab.com">Stable Isotope Geomicrobiology</a></h3>
         <h4><a href="http://www.colorado.edu/" target="_new">University of Colorado Boulder</a></h4>
       </td>
-      <td rowspan="2" class="front-page-info"
-        style="background-image: url('images/sulfur_inclusions_microscope_lowres.jpg');"></td>
+
     </tr>
 
-    <tr class="front-page-gap">
+    <!--<tr class="front-page-gap">
+      <td style="border-right: 2px solid white; background:rgba(0, 0, 0,.3);"></td>
       <td></td>
       <td></td>
-      <td></td>
-    </tr>
+    </tr>-->
 
     <tr>
-      <td></td>
-      <td class="front-page-menu">
-        <div class="btn-group-vertical btn-group-lg front-page-menu-group" role="group">
+      <td>
+        <div class="btn-group-vertical btn-group-lg front-page-menu" role="group">
           {% assign pages = site.pages | sort:"weight"  %}
           {% for p in pages %}
             {% if p.menu %}
@@ -58,15 +50,13 @@ weight: 10
           {% endfor %}
         </div>
       </td>
-      <td></td>
-      <td class="front-page-info" style="background-image: url('images/santa_paula_creek_oil_seep_lowres.jpg');"></td>
     </tr>
 
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td class="front-page-info front-page-lab">
+    <tr class="front-page-footer">
+      <td>
+        <h4 style="margin: 0px;"><a href="http://www.colorado.edu/geolsci/" target="_new">Department of Geological Sciences</a></h4>
+      </td>
+      <td align="right">
           <h3><a href="http://www.kopflab.com">Kopf Lab</a></h3>
       </td>
     </tr>
@@ -77,15 +67,11 @@ weight: 10
 
 
 <div class="text-center">
-  <br/>
-  <a href="http://www.colorado.edu/geolsci/" target="_new">Department of Geosciences</a> |
-  <a href="http://www.colorado.edu/" target="_new">University of Colorado Boulder</a>
-  <br/>
   <span class="small">
-    &copy; Copyright 2015 <a href="mailto:{{ site.email }}">{{ site.owner }}</a><br/>
     Powered by <a href="https://jekyllrb.com/" target="_new">Jekyll</a> and
     <a href="http://github.com" target="_new">GitHub</a>,
-    styled with <a href="http://getbootstrap.com/" target="_new">Bootstrap</a>
+    styled with <a href="http://getbootstrap.com/" target="_new">Bootstrap</a>.
+    &copy; Copyright 2015 <a href="mailto:{{ site.email }}">{{ site.owner }}</a>.
   </span>
 </div>
 

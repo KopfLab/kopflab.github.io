@@ -60,13 +60,15 @@ body {
   img { width: 100%; }
 }
 
-/*********
-FRONT PAGE
-**********/
+/*******************************/
+/********* FRONT PAGE **********/
+/*******************************/
+
 $front-page-lines-thick: 3px solid white;
 $front-page-lines-thin: 2px solid white;
+$front-page-boxes: rgba(0, 0, 0, 0.4); // opacity
 .front-page {
-  background-image: url('../images/yellowstone_lowres.jpg');
+  background-image: url('../images/santa_paula_creek_oil_seep_lowres.jpg');
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,75 +76,60 @@ $front-page-lines-thin: 2px solid white;
   -moz-background-size: cover;
   -o-background-size: cover;
   border: $front-page-lines-thick;
-  //border-radius: 6px;
-  box-sizing: border-box;
-  //min-height: 500px !important; // can set minimum height here
 
   table {
     width: 100%;
     color: white; // text color
-    table-layout: fixed;
+    //table-layout: fixed; // without this better for compact columns
   }
 }
 
 .front-page-title {
-  background:rgba(0, 0, 0,.3); // opacity for front page title
-  padding: 20px;
+  background: $front-page-boxes;
   border-top: $front-page-lines-thick;
   border-bottom: $front-page-lines-thick;
+  padding: 20px;
+  text-align: center;
   h3 {margin: 0px;}
   h4 {margin: 0px; margin-top: 10px;}
   a { text-decoration: none; color: inherit; }
 }
 
-.front-page-info {
-  border-left: $front-page-lines-thick;
-  border-bottom: $front-page-lines-thick;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px;
-}
-
 .front-page-news {
-  vertical-align: top;
   background: $brand-info;
-}
-
-.front-page-lab {
-  border-bottom: 0px solid;
-  background: black;
-  text-align: right;
-  h3 { margin: 0px; }
+  border-left: $front-page-lines-thin;
+  padding: 15px;
+  vertical-align: top;
+  white-space: nowrap;
+  p { padding: 0px; margin: 0px; }
+  h5, h4 { margin: 0px; margin-bottom: 10px; text-align: center; }
   a { text-decoration: none; color: inherit; }
 }
 
-.front-page-gap {
-  height: 100px;
-  td:nth-child(1) { width: 50%; }
-  td:nth-child(2) {
-    //border-left: $front-page-lines-thin;
-    //border-right: $front-page-lines-thin;
-  }
-  td:nth-child(3) { width: 50%; }
-}
-
-.front-page-menu {
-  border: $front-page-lines-thin;
-}
-
-.btn-group-vertical.front-page-menu-group {
-  width: 100%;
+.btn-group-vertical.front-page-menu {
+  background: $front-page-boxes;
+  border-right: $front-page-lines-thin;
+  padding-top: 20px;
+  padding-bottom: 120px; // adjust
   .btn:first-child { border-radius: 0 0 0 0; }
   .btn:last-child { border-radius: 0 0 0 0; }
-  .btn {margin-left: 0; margin-top: 0; }
+  .btn { margin-left: 0; margin-top: 0; }
 }
 
 .front-page-links  {
-  background:rgba(0, 0, 0,.3); // set opacity for front page links
+  background: transparent;
   border: 0px solid;
   text-align: left; // alignment of menu links
   -webkit-transition: all 0.3s;
      -moz-transition: all 0.3s;
           transition: all 0.3s;
+}
+
+.front-page-footer {
+  border-top: $front-page-lines-thick;
+  background-color: transparent;
+  background: black;
+  td { padding: 10px; }
+  h3, h4, h5 { margin: 0px; }
+  a { text-decoration: none; color: inherit; }
 }
