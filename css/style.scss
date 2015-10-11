@@ -129,7 +129,7 @@ $front-page-boxes: rgba(0, 0, 0, 0.4); // opacity
 .front-page-footer {
   border-top: $front-page-lines-thick;
   background-color: transparent;
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   td { padding: 10px; }
   h3, h4, h5 { margin: 0px; }
   a { text-decoration: none; color: inherit; }
