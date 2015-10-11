@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+
+    <div class="text-center page-top-image"
+      style="background-image:url('images/{{ page.image }}');">
+    	<h3>Stable Isotope Geomicrobiology</h3>
+      <h4>University of Colorado Boulder</h4>
+    </div>
+
+    <div class="container">
+
+      {{ content }}
+
+    </div>
+
+    {% include footer.html %}
+
+
+  </body>
+</html>

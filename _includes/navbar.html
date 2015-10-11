@@ -1,0 +1,42 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">Kopf Lab</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        {% assign pages = site.pages | sort:"weight"  %}
+        {% for p in pages %}
+          {% if p.menu and p.align != "right" %}
+            <li class="{% if p.status == 'disabled' %}disabled{% elsif p.url == page.url %}active{% endif %}">
+              <a href="{% if p.status != 'disabled' %}{{ p.url }}{% endif %}">
+                {% if p.icon %} <span class="glyphicon glyphicon-{{ p.icon }}"></span> {% endif %}
+                {{ p.menu }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        {% assign pages = site.pages | sort:"weight"  %}
+        {% for p in pages %}
+          {% if p.menu and p.align == "right" %}
+            <li class="{% if p.status == 'disabled' %}disabled{% elsif p.url == page.url %}active{% endif %}">
+              <a href="{{ p.url }}">
+                {% if p.icon %} <span class="glyphicon glyphicon-{{ p.icon }}"></span> {% endif %}
+                {{ p.menu }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</div>
