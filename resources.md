@@ -1,6 +1,7 @@
 ---
 layout: default
 menu: Resources
+icon: cog
 image: yellowstone_lowres.jpg
 align: left
 status: disabled
