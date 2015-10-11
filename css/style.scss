@@ -118,11 +118,11 @@ $front-page-lines-thin: 2px solid white;
 }
 
 .front-page-gap {
-  height: 50px;
+  height: 100px;
   td:nth-child(1) { width: 50%; }
   td:nth-child(2) {
-    border-left: $front-page-lines-thin;
-    border-right: $front-page-lines-thin;
+    //border-left: $front-page-lines-thin;
+    //border-right: $front-page-lines-thin;
   }
   td:nth-child(3) { width: 50%; }
 }

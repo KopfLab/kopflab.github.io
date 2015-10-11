@@ -16,7 +16,7 @@ weight: 10
       <td class="front-page-info front-page-news">
 
         <p>
-        <h4>News</h4>
+        <h4>Recent news</h4>
         {% for post in site.posts limit: 5 %}
         <span class="glyphicon glyphicon-triangle-right small"></span>{{ post.title }}<br/>
         {% endfor %}
@@ -31,7 +31,7 @@ weight: 10
     <tr>
       <td colspan="3" class="front-page-title">
         <h3><a href="http://www.kopflab.com">Stable Isotope Geomicrobiology</a></h3>
-        <h4><a href="http://www.colorado.edu/">University of Colorado Boulder</a></h4>
+        <h4><a href="http://www.colorado.edu/" target="_new">University of Colorado Boulder</a></h4>
       </td>
       <td rowspan="2" class="front-page-info"
         style="background-image: url('images/sulfur_inclusions_microscope_lowres.jpg');"></td>
@@ -62,7 +62,7 @@ weight: 10
       <td class="front-page-info" style="background-image: url('images/santa_paula_creek_oil_seep_lowres.jpg');"></td>
     </tr>
 
-    <tr class="front-page-gap">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -78,8 +78,8 @@ weight: 10
 
 <div class="text-center">
   <br/>
-  <a href="http://www.colorado.edu/geolsci/">Department of Geosciences</a> |
-  <a href="http://www.colorado.edu/">University of Colorado Boulder</a>
+  <a href="http://www.colorado.edu/geolsci/" target="_new">Department of Geosciences</a> |
+  <a href="http://www.colorado.edu/" target="_new">University of Colorado Boulder</a>
   <br/>
   <span class="small">
     &copy; Copyright 2015 <a href="mailto:{{ site.email }}">{{ site.owner }}</a>
