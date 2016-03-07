@@ -1,41 +1,121 @@
 ---
-layout: default
-menu: News
-icon: globe
-image: yellowstone_lowres.jpg
-align: left
-weight: 5
+layout: plain
+weight: 10
+images:
+  - file: santa_paula_creek_oil_seep_lowres.jpg
+    title: Microbial communities near natural oil seeps
+    location: Santa Paula Creek, California
+    photographer: Sebastian Kopf
+  - file: yellowstone_lowres.jpg
+    title: Carbonate terraces at Mammoth hot springs
+    location: Yellowstone National Park, Wyoming
+  - file: rmnp_methane_bubbles_lowres.jpg
+    title: Methane bubbles frozen in ice
+    location: Rocky Mountain National Park, Colorado
+slideshow_speed: 2000
 ---
 
-<h1>Starting in Fall 2016</h1>
+<div class="container">
 
-<div class="media">
-  <div class="media-body">
+<div id="front-page-slideshow" class="carousel slide" data-ride="carousel">
 
-    <p>The Stable Isotope Geomicrobiology lab at the University of Colorado Boulder will open its doors in the Fall of 2016 when I start as an assistant professor in the <a href="http://www.colorado.edu/geolsci/" target="new">Department of Geological Sciences</a>. The lab will focus on studying the geochemical fingerprints of microbial metabolism, particularly isotopic effects and molecular markers, as well as their physiological drivers.</p>
+  <div class="carousel-inner" role="listbox">
 
-    <p>My lab is part of the newly expanding Geobiology program at CU Boulder, that also comprises <a href="http://spot.colorado.edu/~templeta/Templeton_Lab/Welcome.html" target="new">Alexis Templeton's</a>, <a href="https://instaar.colorado.edu/people/julio-sepulveda/" target="new">Julio Sepulveda's</a> and <a href="http://isotope.colorado.edu/" target="new">Steve Mojzsis'</a> groups, and has close ties with the Institute of Arctic and Alpine Research (<a href="https://instaar.colorado.edu/" target="new">INSTAAR</a>) and the <a href="https://biofrontiers.colorado.edu/" target="new">Biofrontiers Institute</a>.</p>
+    <!-- table structure -->
+    <div class="front-page-table">
 
+      <table>
 
-    <p>Please note that this website is still under construction and more information will follow soon. In the meantime, please contact me at sebastian.kopf (at) colorado.edu about upcoming research opportunities at CU Boulder.</p>
+        <!-- news -->
+        <tr>
+          <td style="width: 99%;"></td>
+          <td class="front-page-news" style="">
+            <p>
+            <h4>Recent News</h4>
+            {% for item in site.categories.news limit: 5 %}
+            <span class="glyphicon glyphicon-triangle-right small"></span> {{ item.title }}<br/>
+            {% endfor %}
+            </p>
+          </td>
+        </tr>
 
-    <br/>
-    <h4 id="contact">Current affiliation</h4>
+        <!-- title and slideshow controls -->
+        <tr>
+          <td colspan="2" class="front-page-title">
+            <h3><a href="http://www.kopflab.com">Stable Isotope Geomicrobiology</a></h3>
+            <h4><a href="http://www.colorado.edu/" target="_new">University of Colorado Boulder</a></h4>
 
-    <p><i>
-      <b>Sebastian Kopf</b><br/>
-      Agouron Geobiology Fellow<br/>
-        Department of Geosciences<br/>
-        Princeton University, NJ<br/>
-        skopf (at) princeton.edu
-    </i></p>
+            <div class="front-page-controls">
+              <ol class="carousel-indicators">
+                  {% for image in page.images %}
+                    {% if forloop.index == 1 %}
+                      <li data-target="#front-page-slideshow" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+                    {% else %}
+                      <li data-target="#front-page-slideshow" data-slide-to="{{ forloop.index0 }}"></li>
+                    {% endif %}
+                  {% endfor %}
+              </ol>
+            </div>
+
+          </td>
+        </tr>
+
+        <!-- menu -->
+        <tr>
+          <td colspan="2">
+            <div class="btn-group-vertical btn-group-lg front-page-menu" role="group">
+              <br/>
+              {% assign pages = site.pages | sort:"weight"  %}
+              {% for p in pages %}
+                {% if p.menu %}
+                <a class="btn btn-info front-page-links" href="{{ p.url }}">
+                  {% if p.icon %} <span class="glyphicon glyphicon-{{ p.icon }}"></span>&nbsp; {% endif %}
+                  {{ p.menu }}
+                </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </td>
+        </tr>
+
+        <!-- department footer -->
+        <tr class="front-page-footer">
+          <td colspan="2">
+            <div class="row">
+              <div class="col-md-6"><h4><a href="http://www.colorado.edu/geolsci/" target="_new">Department of Geological Sciences</a></h4></div>
+              <div class="col-md-6 text-right"><h4 class="pull-right"><a href="http://www.kopflab.com">Kopf Lab</a></h4></div>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- images -->
+    {% for image in page.images %}
+    <div class="item {% if forloop.index == 1 %} active {% endif %} front-page-image"
+           style="background-image: url('images/front_page/{{ image.file }}')">
+           <!--
+           consider adding more info here (maybe with a hover over info button that
+           brings the picture to the front):
+           <h1>{{ image.title }}</h1>
+           <h2>{{ image.location }}</h2>
+           -->
+    </div>
+    {% endfor %}
 
   </div>
+</div>
 
-  <div class="media-right">
-    <a href="#">
-      <img class="media-object framed" src="images/skopf_thumbprint.jpg" width="200px">
-    </a>
-  </div>
+<!-- info -->
+<div class="text-center">
+  <span class="small">
+    Powered by <a href="https://jekyllrb.com/" target="_new">Jekyll</a> and
+    <a href="http://github.com" target="_new">GitHub</a>,
+    styled with <a href="http://getbootstrap.com/" target="_new">Bootstrap</a>.
+    Copyright {{ site.time | date: '%Y' }} &copy; <a href="mailto:{{ site.email }}">Kopf Lab</a>.
+  </span>
+</div>
 
 </div>
