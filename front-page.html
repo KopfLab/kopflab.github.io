@@ -1,71 +1,121 @@
 ---
 layout: plain
 weight: 10
+images:
+  - file: santa_paula_creek_oil_seep_lowres.jpg
+    title: Microbial communities near natural oil seeps
+    location: Santa Paula Creek, California
+    photographer: Sebastian Kopf
+  - file: yellowstone_lowres.jpg
+    title: Carbonate terraces at Mammoth hot springs
+    location: Yellowstone National Park, Wyoming
+  - file: rmnp_methane_bubbles_lowres.jpg
+    title: Methane bubbles frozen in ice
+    location: Rocky Mountain National Park, Colorado
 ---
 
 <div class="container">
 
-<div class="front-page">
+<div id="front-page-slideshow" class="carousel slide" data-ride="carousel">
 
-  <table>
+  <div class="carousel-inner" role="listbox">
 
-    <tr>
-      <td style="width: 99%;"></td>
-      <td class="front-page-news" style="">
-        <p>
-        <h4>Recent News</h4>
-        {% for post in site.posts limit: 5 %}
-        <span class="glyphicon glyphicon-triangle-right small"></span> {{ post.title }}<br/>
-        {% endfor %}
-        </p>
-      </td>
-    </tr>
+    <!-- table structure -->
+    <div class="front-page-table">
 
-    <tr>
-      <td colspan="2" class="front-page-title">
-        <h3><a href="http://www.kopflab.com">Stable Isotope Geomicrobiology</a></h3>
-        <h4><a href="http://www.colorado.edu/" target="_new">University of Colorado Boulder</a></h4>
-      </td>
+      <table>
 
-    </tr>
+        <!-- news -->
+        <tr>
+          <td style="width: 99%;"></td>
+          <td class="front-page-news" style="">
+            <p>
+            <h4>Recent News</h4>
+            {% for item in site.categories.news limit: 5 %}
+            <span class="glyphicon glyphicon-triangle-right small"></span> {{ item.title }}<br/>
+            {% endfor %}
+            </p>
+          </td>
+        </tr>
 
-    <tr>
-      <td colspan="2">
-        <div class="btn-group-vertical btn-group-lg front-page-menu" role="group">
-          {% assign pages = site.pages | sort:"weight"  %}
-          {% for p in pages %}
-            {% if p.menu %}
-            <a class="btn btn-info front-page-links" href="{{ p.url }}">
-              {% if p.icon %} <span class="glyphicon glyphicon-{{ p.icon }}"></span>&nbsp; {% endif %}
-              {{ p.menu }}
-            </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </td>
-    </tr>
+        <!-- title and slideshow controls -->
+        <tr>
+          <td colspan="2" class="front-page-title">
+            <h3><a href="http://www.kopflab.com">Stable Isotope Geomicrobiology</a></h3>
+            <h4><a href="http://www.colorado.edu/" target="_new">University of Colorado Boulder</a></h4>
 
-    <tr class="front-page-footer">
-      <td colspan="2">
-        <div class="row">
-          <div class="col-md-6"><h4><a href="http://www.colorado.edu/geolsci/" target="_new">Department of Geological Sciences</a></h4></div>
-          <div class="col-md-6 text-right"><h4 class="pull-right"><a href="http://www.kopflab.com">Kopf Lab</a></h4></div>
-        </div>
-      </td>
-    </tr>
+            <div class="front-page-controls">
+              <ol class="carousel-indicators">
+                  {% for image in page.images %}
+                    {% if forloop.index == 1 %}
+                      <li data-target="#front-page-slideshow" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+                    {% else %}
+                      <li data-target="#front-page-slideshow" data-slide-to="{{ forloop.index0 }}"></li>
+                    {% endif %}
+                  {% endfor %}
+              </ol>
+            </div>
 
-  </table>
+          </td>
+        </tr>
 
+        <!-- menu -->
+        <tr>
+          <td colspan="2">
+            <div class="btn-group-vertical btn-group-lg front-page-menu" role="group">
+              <br/>
+              {% assign pages = site.pages | sort:"weight"  %}
+              {% for p in pages %}
+                {% if p.menu %}
+                <a class="btn btn-info front-page-links" href="{{ p.url }}">
+                  {% if p.icon %} <span class="glyphicon glyphicon-{{ p.icon }}"></span>&nbsp; {% endif %}
+                  {{ p.menu }}
+                </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </td>
+        </tr>
+
+        <!-- department footer -->
+        <tr class="front-page-footer">
+          <td colspan="2">
+            <div class="row">
+              <div class="col-md-6"><h4><a href="http://www.colorado.edu/geolsci/" target="_new">Department of Geological Sciences</a></h4></div>
+              <div class="col-md-6 text-right"><h4 class="pull-right"><a href="http://www.kopflab.com">Kopf Lab</a></h4></div>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- images -->
+    {% for image in page.images %}
+    <div class="item {% if forloop.index == 1 %} active {% endif %} front-page-image"
+           style="background-image: url('images/front_page/{{ image.file }}')">
+           <!--
+           consider adding more info here (maybe with a hover over info button that
+           brings the picture to the front):
+           <h1>{{ image.title }}</h1>
+           <h2>{{ image.location }}</h2>
+           -->
+    </div>
+    {% endfor %}
+
+  </div>
 </div>
 
-
+<!-- info -->
 <div class="text-center">
   <span class="small">
     Powered by <a href="https://jekyllrb.com/" target="_new">Jekyll</a> and
     <a href="http://github.com" target="_new">GitHub</a>,
     styled with <a href="http://getbootstrap.com/" target="_new">Bootstrap</a>.
-    &copy; Copyright 2015 <a href="mailto:{{ site.email }}">{{ site.owner }}</a>.
+    Copyright {{ site.time | date: '%Y' }} &copy; <a href="mailto:{{ site.email }}">Kopf Lab</a>.
   </span>
 </div>
+
 
 </div>
