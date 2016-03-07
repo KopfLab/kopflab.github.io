@@ -7,6 +7,8 @@
 // for glyphs, check out http://getbootstrap.com/components/
 // override bootstrap values, full list of variables:
 // http://getbootstrap.com/customize/#less-variables
+
+/***** Bootstrap settings ******/
 $font-size-base: 18px;
 $font-size-small: 12px;
 //$font-size-h1: 40px;
@@ -20,117 +22,14 @@ $container-lg: 960px;
 
 // for info buttons (especially on front page)
 $brand-info: rgb(123, 165, 244);
-
-// import bootstrap
 @import "bootstrap";
 
-// custom css
-html {
-  position: relative;
-  min-height: 100%;
-  overflow-y: scroll; // to make sure that the content doesn't always shift around when the scrollbar first shows up
-}
-
-body {
-  padding-top: 50px;
-  margin-bottom: $navbar-height;
-}
-
-.gap-right {
-  margin-right: 10px;
-}
-
-.gap-left {
-  margin-left: 10px;
-}
-
-.framed {
-  border: 2px solid #000000;
-}
-
-
-.page-top-image {
-  width:100%;
-  height:300px;
-  background-size:cover;
-  border-bottom: 3px solid #222;
-  color: white; // text color
-  padding: 50px;
-  font-size: 14pt;
-  img { width: 100%; }
-}
-
-/*******************************/
-/********* FRONT PAGE **********/
-/*******************************/
-// Note: not sure this is best done with the table, could probably also do just divs
-
+/***** Frontpage settings ******/
 $front-page-lines-thick: 3px solid white;
 $front-page-lines-thin: 2px solid white;
 $front-page-boxes: rgba(0, 0, 0, 0.4); // opacity
-.front-page {
-  background-image: url('../images/santa_paula_creek_oil_seep_lowres.jpg');
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  border: $front-page-lines-thick;
+$front-page-height: 700px;
+@import "frontpage";
 
-  table {
-    width: 100%;
-    color: white; // text color
-    //table-layout: fixed; // without this better for compact columns
-  }
-}
-
-.front-page-title {
-  background: $front-page-boxes;
-  border-top: $front-page-lines-thick;
-  border-bottom: $front-page-lines-thick;
-  padding: 20px;
-  text-align: center;
-  h3 {margin: 0px;}
-  h4 {margin: 0px; margin-top: 10px;}
-  a { text-decoration: none; color: inherit; }
-}
-
-.front-page-news {
-  background: $brand-info;
-  border-left: $front-page-lines-thin;
-  padding: 15px;
-  vertical-align: top;
-  white-space: nowrap;
-  p { padding: 0px; margin: 0px; }
-  h5, h4 { margin: 0px; margin-bottom: 10px; text-align: center; }
-  a { text-decoration: none; color: inherit; }
-}
-
-.btn-group-vertical.front-page-menu {
-  background: $front-page-boxes;
-  border-right: $front-page-lines-thin;
-  padding-top: 20px;
-  padding-bottom: 120px; // adjust
-  .btn:first-child { border-radius: 0 0 0 0; }
-  .btn:last-child { border-radius: 0 0 0 0; }
-  .btn { margin-left: 0; margin-top: 0; }
-}
-
-.front-page-links  {
-  background: transparent;
-  border: 0px solid;
-  text-align: left; // alignment of menu links
-  -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-          transition: all 0.3s;
-}
-
-.front-page-footer {
-  border-top: $front-page-lines-thick;
-  background-color: transparent;
-  background: rgba(0, 0, 0, 0.8);
-  td { padding: 10px; }
-  h3, h4, h5 { margin: 0px; }
-  a { text-decoration: none; color: inherit; }
-}
+/***** General settings ******/
+@import "general";

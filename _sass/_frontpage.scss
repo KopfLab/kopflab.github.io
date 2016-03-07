@@ -1,0 +1,90 @@
+/***** Frontpage settings ******/
+
+// Note: not sure this is best done with the table, could probably also do just divs
+
+.front-page-table {
+  border: $front-page-lines-thick;
+  height: $front-page-height;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 15;
+
+  table {
+    width: 100%;
+    height: 100%;
+    color: white; // text color
+    //table-layout: fixed; // without this better for compact columns
+  }
+}
+
+.front-page-image {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: $front-page-height;
+}
+
+.front-page-title {
+  background: $front-page-boxes;
+  border-top: $front-page-lines-thick;
+  border-bottom: $front-page-lines-thick;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  text-align: center;
+  h3 {margin: 0px;}
+  h4 {margin: 0px; margin-top: 10px;}
+  a { text-decoration: none; color: inherit; }
+
+}
+
+.front-page-controls{
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+
+  .carousel-indicators{
+     top: 2px;
+  }
+}
+
+.front-page-news {
+  background: $brand-info;
+  border-left: $front-page-lines-thin;
+  padding: 15px;
+  vertical-align: top;
+  white-space: nowrap;
+  p { padding: 0px; margin: 0px; }
+  h5, h4 { margin: 0px; margin-bottom: 10px; text-align: center; }
+  a { text-decoration: none; color: inherit; }
+}
+
+.front-page-menu {
+  background: $front-page-boxes;
+  border-right: $front-page-lines-thin;
+  height: 100%;
+  .btn:first-child { border-radius: 0 0 0 0; }
+  .btn:last-child { border-radius: 0 0 0 0; }
+  .btn { margin-left: 0; margin-top: 0; }
+}
+
+.front-page-links  {
+  background: transparent;
+  border: 0px solid;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.front-page-footer {
+  border-top: $front-page-lines-thick;
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.8);
+  td { padding: 10px; }
+  h3, h4, h5 { margin: 0px; }
+  a { text-decoration: none; color: inherit; }
+}
