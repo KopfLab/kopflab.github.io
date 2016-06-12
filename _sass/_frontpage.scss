@@ -2,6 +2,9 @@
 
 // Note: not sure this is best done with the table, could probably also do just divs
 
+$front-page-radius: 6px;
+$front-page-radius-image: 18px;
+
 .front-page-table {
   border: $front-page-lines-thick;
   height: $front-page-height;
@@ -9,6 +12,7 @@
   bottom: 0px;
   left: 0px;
   z-index: 15;
+  border-radius: $front-page-radius;
 
   table {
     width: 100%;
@@ -26,6 +30,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   height: $front-page-height;
+  border-radius: $front-page-radius-image;
 }
 
 .front-page-title {
@@ -54,6 +59,7 @@
 .front-page-news {
   background: $brand-info;
   border-left: $front-page-lines-thin;
+  border-radius: 0px $front-page-radius 0px 0px;
   padding: 15px;
   vertical-align: top;
   white-space: nowrap;
@@ -84,7 +90,10 @@
   border-top: $front-page-lines-thick;
   background-color: transparent;
   background: rgba(0, 0, 0, 0.8);
-  td { padding: 10px; }
+  td {
+    padding: 10px;
+    border-radius: 0px 0px $front-page-radius $front-page-radius;
+  }
   h3, h4, h5 { margin: 0px; }
   a { text-decoration: none; color: inherit; }
 }
