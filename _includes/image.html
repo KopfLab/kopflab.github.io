@@ -12,5 +12,5 @@
 <a href="{{ include.path }}{{ include.img }}.{{ ext }}"
   data-lightbox="team" data-title="{{ include.caption }}">
   <img src="{{ include.path }}{{ include.img }}{{ thumb }}.{{ ext }}"
-    title="{{ include.caption }}" class="border">
+    title="{{ include.caption }}" class="border"{% if include.height %} height="{{ include.height }}" {% endif %}>
 </a>
