@@ -1,0 +1,16 @@
+{% if include.ext %}
+{%    assign ext = include.ext %}
+{%  else %}
+{%    assign ext = "jpg" %}
+{%  endif %}
+
+{%  if include.thumb %}
+{%    assign thumb =  include.thumb %}
+{%  else %}
+{%    assign thumb = "_thumb" %}
+{%  endif %}
+<a href="{{ include.path }}{{ include.img }}.{{ ext }}"
+  data-lightbox="team" data-title="{{ include.caption }}">
+  <img src="{{ include.path }}{{ include.img }}{{ thumb }}.{{ ext }}"
+    title="{{ include.caption }}" class="border">
+</a>
