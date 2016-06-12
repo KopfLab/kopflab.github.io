@@ -34,7 +34,30 @@ $front-page-height: 700px;
 /***** General settings ******/
 @import "general";
 
+.jumbotron{
+  background: url("../images/front_page/rmnp_methane_bubbles_lowres.jpg") no-repeat center center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+.container .jumbotron {
+  //border-radius: 0px;
+}
+
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
 
 /***** Image settings ******/
 .border {
