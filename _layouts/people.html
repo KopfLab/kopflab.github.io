@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class = "PersonPage">
+
+	<div class="PersonWrap">
+		<div class="PersonName">
+		 	{{ page.name }}
+		</div>
+
+		<div class="PersonTitle">
+		   	{% if page.position %}{{ page.position }}{% endif %}
+		</div>
+
+			<div class ="PersonBio">
+			{{ content }}
+			</div>
+	</div> <!-- PersonWrap -->
+
+<img src="../images/{{ page.image }}" />
+
+</div>  <!-- PersonPage -->
+
+<div class = "PersonContact"> <!-- PersonContact -->
+<span style="font-size:14px;">{{ page.name }}</span> &nbsp;&nbsp;
+{% if page.office %}{{ page.office }}{% endif %} &nbsp;&nbsp;
+{% if page.phone %}{{ page.phone }}{% endif %}&nbsp;&nbsp;
+<div class="PersonEmail">{% if page.email %}<a href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}</div>&nbsp;&nbsp;
+</div>

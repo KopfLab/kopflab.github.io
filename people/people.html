@@ -1,0 +1,24 @@
+---
+layout: default
+menu: People
+icon: user
+status: disabled
+align: left
+weight: 3
+permalink: /people/
+---
+
+
+<h1>The Team</h1>
+
+<div class="row">
+{% for post in site.categories.people reversed %}
+	<div class="col-xs-12 col-md-4">
+		<a href="{{ post.url }}">
+			<img src="images/{{ post.thumb }}" height="160"/>
+			<h3>{{ post.name }}</h3>
+			<h4>{{ post.title }}</h4>
+		</a>
+	</div>
+{% endfor %}
+</div>
