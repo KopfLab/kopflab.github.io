@@ -12,45 +12,43 @@
 $font-size-base: 18px;
 $font-size-small: 12px;
 //$font-size-h1: 40px;
+$container-sm: 800px; // Small screen / tablet
+$container-md: 960px; // Medium screen / desktop
+$container-lg: 960px; // Large screen / wide desktop
+$brand-info: rgb(123, 165, 244); // for info buttons
+$navbar-inverse-bg: rgb(25, 25, 25);
+$navbar-inverse-border: $navbar-inverse-bg;
 
-// Small screen / tablet
-$container-sm: 720px;
-// Medium screen / desktop
-$container-md: 960px;
-// Large screen / wide desktop
-$container-lg: 960px;
 
-// for info buttons (especially on front page)
-$brand-info: rgb(123, 165, 244);
+// Inverted navbar links
+$navbar-inverse-link-color:                 #cfb87b;
+$navbar-inverse-link-hover-color:           rgb(255, 255, 255);
+$navbar-inverse-link-hover-bg:              transparent !default;
+$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
+$navbar-inverse-link-active-bg:             $navbar-inverse-bg;
+
 @import "bootstrap";
 
-/***** Frontpage settings ******/
-$front-page-lines-thick: 3px solid white;
-$front-page-lines-thin: 2px solid white;
-$front-page-boxes: rgba(0, 0, 0, 0.4); // opacity
-$front-page-height: 700px;
-@import "frontpage";
+/***** Custom settings ******/
+$logo-bgrd-color: $navbar-inverse-bg; //rgb(30, 30, 30);
+$logo-url: "/images/cub_kopf_lab_w.png";
+$logo-height: 70px;
+$navbar-bgrd-color: $navbar-inverse-bg;
+$navbar-border-bottom: 1px solid rgb(255, 255, 255);
+$slideshow-lines: 2px solid rgb(255, 255, 255);
+$slideshow-title-band: rgba(0, 0, 0, 0.4); // opacity
+$slideshow-title-color: rgb(255, 255, 255);
+$slideshow-title-height: 80px;
+$slideshow-image-height: 300px;
+$slideshow-border-bottom: $navbar-border-bottom;
+$slideshow-caption-color: rgb(210, 210, 210);
+$map-height: 200px;
 
-/***** General settings ******/
-@import "general";
+$footer-bgrd-color: $logo-bgrd-color;
+$footer-text-color: rgb(255, 255, 255);
+$footer-link-color: #cfb87b;
 
-
-.jumbotron{
-  background: url("../images/front_page/yellowstone_lowres.jpg") no-repeat center center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.container .jumbotron {
-  //border-radius: 0px;
-}
-
+/***** Custom CSS *****/
 @media (min-width: 768px){
     .navbar-nav{
         float:none;
@@ -60,40 +58,292 @@ $front-page-height: 700px;
     }
 }
 
+/***** HTML and body ******/
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll; // to make sure that the content doesn't always shift around when the scrollbar first shows up
+}
+
+body {
+  margin-bottom: 0px; //$navbar-height;
+}
+
+/***** Logo (heading) *****/
+
+.logo-container {
+  background-color: $logo-bgrd-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .logo {
+    display: block;
+    width: 500px;
+    height: $logo-height;
+    float: left;
+    background: url($logo-url) no-repeat;
+    background-size: auto $logo-height;
+    position: relative;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+}
+
+/***** Navigation (heading) *****/
+
+.navigation-container {
+  background-color: $navbar-bgrd-color;
+  border-bottom: $navbar-border-bottom;
+  font-size: 90%;
+  .overline {
+    align-content: center;
+    border-top: 2px solid rgb(255, 255, 255);
+  }
+}
+
+/***** Slideshow (heading) *****/
+
+.slideshow-container {
+
+  border-bottom: $slideshow-border-bottom;
+
+  .slideshow-title {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: $slideshow-title-height;
+    margin: auto;
+    z-index: 75;
+
+    table, tr { // using table because easier to center vertically in dynamic pages
+      min-height: 100%;
+      width: 100%;
+      td {
+        width: 100%;
+        background: $slideshow-title-band;
+        border-top: $slideshow-lines;
+        border-bottom: $slideshow-lines;
+        text-align: center;
+        vertical-align: middle;
+        font-family: sans-serif;
+        color: $slideshow-title-color;
+        a { text-decoration: none; color: inherit; }
+        h3, h4 {
+          margin: 0px;
+          padding-left: 65px;
+          padding-right: 65px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .slideshow-arrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+  }
+
+  .slideshow-bullets {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    z-index: 150;
+  }
+
+  .slideshow-image {
+    width: 100%;
+    height: $slideshow-image-height;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .slideshow-caption {
+    position: absolute;
+    z-index: 50;
+    top: 0px;
+    right: 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+    color: $slideshow-caption-color;
+    text-align: right;
+    text-shadow: $carousel-text-shadow;
+    font-family: sans-serif;
+    font-size: 50%;
+    text-align: center;
+    .caption { text-decoration: underline; }
+    .title { font-weight: bold; font-size: 120%;  }
+    .location {  }
+    .photographer { font-style: italic; }
+  }
+
+}
+
+
+/**** General CSS ****/
+
+.gap-right {
+  margin-right: 10px;
+}
+
+.gap-left {
+  margin-left: 10px;
+}
+
+.framed {
+  border: 2px solid #000000;
+}
+
+.page-top-image {
+  width:100%;
+  height:300px;
+  background-size:cover;
+  border-bottom: 3px solid #222;
+  color: white; // text color
+  padding: 50px;
+  font-size: 14pt;
+  img { width: 100%; }
+}
+
+
+
+
 
 /***** Image settings ******/
 .border {
   border: 2px solid rgb(33,33,33);
 }
 
-// page divider
-.page-divider {
-	$divider-color: #ddd;
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 1px solid $divider-color;
-  .one {
-    position: relative;
-    top: -9px;
+/**** Regular page title ****/
+.title-container{
+  @extend .container;
+  text-align: center;
+
+  // page divider
+  $divider-color: #ddd;
+  .page-divider {
     display: block;
-    background: $divider-color;
-    width: 18px;
-    height: 18px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+    border-top: 1px solid $divider-color;
+    .one {
+      position: relative;
+      top: -9px;
+      display: block;
+      background: $divider-color;
+      width: 18px;
+      height: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+    }
+    .two {
+      position: relative;
+      top: -26px;
+      display: block;
+      background: rgb(255, 255, 255);
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+    }
   }
-  .two {
-    position: relative;
-    top: -26px;
+}
+
+
+/***** Map *****/
+#googlemaps {
+  border-top: 2px solid rgb(0, 0, 0);
+  height: $map-height;
+}
+
+
+/**** Footer ****/
+.footer-container {
+  @extend .row;
+  background-color: $footer-bgrd-color;
+  color: $footer-text-color;
+  font-size: 90%;
+  padding-bottom: 20px;
+
+  .left, .center, .right { margin-bottom: 10px; }
+  .top { @extend .col-sm-12; }
+  .left { @extend .col-sm-4; }
+  .center { @extend .col-sm-3; }
+  .right { @extend .col-sm-5; }
+
+  a {
+	  color: $footer-link-color;
+	  &:active, &:focus, &:hover {
+	    color: darken($footer-link-color, 20%);
+      text-decoration: none;
+	  }
+	  &:active, &:focus {
+	    outline: none;
+	  }
+	}
+
+  h3 { a{ color: $footer-text-color; }}
+
+  p {
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .be-boulder {
+    margin-top: 20px;
+  }
+}
+
+/***** Return to top *****/
+#return-to-top {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
     display: block;
-    background: rgb(255, 255, 255);
-    width: 16px;
-    height: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-  }
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
 }
