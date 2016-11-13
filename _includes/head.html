@@ -22,11 +22,15 @@
   <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
 
-  {% if page.slideshow_speed %}
-  <!-- Slide show -->
+  {% if page.image %}
+  <!-- Slideshow -->
   <script type="text/javascript">
+    // start slideshow with a random slide
     $(document).ready(function() {
-      $('.carousel').carousel({interval: {{ page.slideshow_speed }}});
+      var rand = Math.floor((Math.random() * $('.item').length));
+      $('#slideshow').carousel(rand);
+      $('#slideshow').show();
+      //$('#slideshow').fadeIn(1000); // (for fast display instead)
     });
   </script>
   {% endif %}

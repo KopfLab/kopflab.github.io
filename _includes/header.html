@@ -24,7 +24,7 @@
           {% assign pages = site.pages | sort:"weight"  %}
           {% for p in pages %}
             {% if p.menu %}
-              <li class="{% if p.status == 'disabled' %}disabled{% elsif p.url == page.url %}active{% endif %}">
+              <li class="{% if p.status == 'disabled' %}disabled{% elsif p.url == page.url or (p.categories and p.category == page.categories.first) %}active{% endif %}">
                 <a href="{% if p.status != 'disabled' %}{{ p.url }}{% endif %}">
                   {% if p.icon %} <span class="{{ p.icon }}"></span> {% endif %}
                   {{ p.menu }}
@@ -41,7 +41,8 @@
 {% if page.image %}
 <!-- Slideshow -->
 <div class="slideshow-container">
-  <div id="slideshow" class="carousel slide" data-ride="carousel">
+  <div id="slideshow" class="carousel slide carousel-fade" data-pause="hover"
+      data-ride="carousel" {% if page.image_interval %} data-interval="{{ page.image_interval }}" {% endif %}>
 
     <!-- Slides -->
     <div class="carousel-inner" role="listbox">
@@ -69,7 +70,7 @@
           {% if page.image_height and page.image_height and page.image_height == page.title_height %}
             style = "border-top: none;"
           {% endif %}>
-          <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+          <h3>{{ page.title }}</h3>
           {% if page.subtitle %}
           <h4>{{ page.subtitle }}</h4>
           {% endif %}
