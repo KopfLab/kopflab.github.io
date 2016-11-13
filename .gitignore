@@ -3,3 +3,4 @@ _ignore
 .sass-cache
 originals/
 *_original.*
+*.pdf
