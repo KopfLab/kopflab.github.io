@@ -1,0 +1,30 @@
+---
+layout: default
+menu: News
+icon: glyphicon glyphicon-globe
+title: News
+title_height: 80px
+image_height: 80px
+align: left
+weight: 6
+category: news
+permalink: /news/
+---
+
+{% for post in site.categories.news %}
+<div class="news-item media">
+
+  <div class="media-left">
+    <div class="news-date">
+      <div class="day">{{ post.date | date: "%-d"}}</div>
+      <div class="month">{{ post.date | date: "%B"}}</div>
+      <div class="year">{{ post.date | date: "%Y"}}</div>
+    </div>
+  </div>
+
+  <div class="media-body">
+    <h3 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {{ post.content }}
+  </div>
+</div>
+{% endfor %}
