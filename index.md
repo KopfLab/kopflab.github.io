@@ -14,6 +14,18 @@ image:
   - file: /images/home/rmnp_methane_bubbles_lowres.jpg
     title: Methane bubbles frozen in ice
     location: Rocky Mountain National Park, Colorado
+  - file: /images/home/mono_lake.jpg
+    title: Alkaline Mono Lake
+    location: Eastern Sierra Nevada, California
+  - file: /images/home/stromatolites.jpg
+    title: Precambrian Chevron<br/>Stromatolites
+    location: West Texas
+  - file: /images/home/iceland1.jpg
+    title: Phototrophs growing<br/>in glacial melt
+    location: Laugavegur, Iceland
+  - file: /images/home/octopus_spring.jpg
+    title: Microbial structures at<br/>Octopus Spring
+    location: Yellowstone National Park, Wyoming
 image_height: 300px
 image_interval: 3000
 weight: 0
@@ -22,7 +34,7 @@ category: home
 
 ## About the Lab
 
-The Geomicrobial Physiology lab at the University of Colorado Boulder started in the Fall of 2016 and is focused on studying the physiological drivers of geochemical fingerprints of microbial metabolism, particularly isotopic effects and molecular markers. The lab is part of the newly expanding Geobiology program at CU Boulder, that also comprises <a href="http://spot.colorado.edu/~templeta/Templeton_Lab/Welcome.html" target="new">Alexis Templeton's</a>, <a href="https://instaar.colorado.edu/people/julio-sepulveda/" target="new">Julio Sepulveda's</a> Bozswell Wing's and <a href="http://isotope.colorado.edu/" target="new">Steve Mojzsis'</a> groups, and has close ties with the Institute of Arctic and Alpine Research (<a href="https://instaar.colorado.edu/" target="new">INSTAAR</a>) and the <a href="https://biofrontiers.colorado.edu/" target="new">Biofrontiers Institute</a>. Please note that this website is still under construction and more information will follow soon. In the meantime, please contact me at sebastian.kopf (at) colorado.edu about upcoming research opportunities at CU Boulder.
+The Geomicrobial Physiology lab at the University of Colorado Boulder started in the Fall of 2016 and is focused on studying the physiological drivers of geochemical fingerprints of microbial metabolism, particularly isotopic effects and molecular markers. The lab is part of the newly expanding Geobiology program at CU Boulder, that also comprises <a href="http://spot.colorado.edu/~templeta/Templeton_Lab/Welcome.html" target="new">Alexis Templeton's</a>, <a href="https://instaar.colorado.edu/people/julio-sepulveda/" target="new">Julio Sepulveda's</a>, Bozswell Wing's and <a href="http://isotope.colorado.edu/" target="new">Steve Mojzsis'</a> groups, and has close ties with the Institute of Arctic and Alpine Research (<a href="https://instaar.colorado.edu/" target="new">INSTAAR</a>) and the <a href="https://biofrontiers.colorado.edu/" target="new">Biofrontiers Institute</a>. Please note that this website is still under construction and more information will follow soon. In the meantime, please contact me at sebastian.kopf (at) colorado.edu about upcoming research opportunities at CU Boulder.
 
 ## Recent News
 

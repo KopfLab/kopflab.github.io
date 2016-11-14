@@ -17,6 +17,13 @@
   {% endfor %}
 {% endif %}
 
+{% if include.asc %}
+  <!-- posts sorted in ascending order -->
+  {% assign tmp_post = prev_post %}
+  {% assign prev_post = next_post %}
+  {% assign next_post = tmp_post %}
+{% endif %}
+
 <div class="post-navigation">
   <div class="next-post">
     {% if next_post.url %}

@@ -2,23 +2,64 @@
 layout: default
 menu: People
 icon: fa fa-users
-status: disabled
-align: left
-weight: 1
+title: The Team
+title_height: 70px
+image:
+  - file: /images/people/starfish.jpg
+image_height: 200px
+category: people
 permalink: /people/
+filters:
+  - label: Faculty
+    id: faculty
+  - label: Postdocs
+    id: postdoc
+  - label: Grad Students
+    id: grad
+  - label: Undergraduates
+    id: undergrad
+  - label: Staff
+    id: staff
+grid: |
+  masonry: {
+    columnWidth: 300, // also needs changing in style.scss $people-image-width
+    gutter: 10,
+    isFitWidth: true
+  }
+weight: 1
 ---
 
+<h2>Who we are</h2>
 
-<h1>The Team</h1>
+<div class="people-grid">
 
-<div class="row">
-{% for post in site.categories.people reversed %}
-	<div class="col-xs-12 col-md-4">
-		<a href="{{ post.url }}">
-			<img src="images/{{ post.thumb }}" height="160"/>
-			<h3>{{ post.name }}</h3>
-			<h4>{{ post.title }}</h4>
-		</a>
+	<!-- Filters are overkill for now --><!--
+	<div class="filters">
+		<div id="filters" class="btn-group" data-toggle="buttons">
+				<label class="btn btn-primary active" data-filter="*"><input type="radio" checked> All</label>
+				{% for filter in page.filters %}
+				<label class="btn btn-primary" data-filter=".{{ filter.id }}"><input type="radio">{{ filter.label }}</label>
+				{% endfor %}
+		</div>
 	</div>
-{% endfor %}
+	-->
+
+	<div class="grid">
+		{% for person in site.categories.people reversed %}
+		<div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
+			<div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
+				<div class="info">
+					<a href="{{ person.url }}">
+						<h4>{{ person.title }}</h4>
+						<p>{{ person.position }}</p>
+					</a>
+				</div>
+			</div></div></div>
+
+			<a href="{{ person.url }}" class="background">
+				<div class="grid-image"><img src="{{ person.picture_profile }}"/></div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
 </div>

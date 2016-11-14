@@ -193,6 +193,7 @@ body {
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -407,6 +408,120 @@ $slide-transition: 0.7s ease-in-out opacity;
   .prev-post{
     @extend .col-xs-6;
     @extend .text-right;
+  }
+}
+
+/**********************************************/
+/***************** Hover Info *****************/
+/**********************************************/
+
+$hover-info-transition: 0.5s ease opacity;
+.hover-info {
+
+  // these 3 layers are necessary for proper centering
+  .center-wrap-1 {
+    height:100%;
+    width:100%;
+    display:table;
+    vertical-align:middle;
+  }
+
+  .center-wrap-2 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .center-wrap-3 {
+    position:relative;
+    left:50%;
+    float:left;
+  }
+
+  .info {
+    position:relative;
+    padding: 10px;
+    left:-50%;
+    background-color: $body-link-color;
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    opacity: 0;
+    a {
+      color: rgb(255, 255, 255);
+      &:active, &:focus, &:hover {
+        color: rgb(255, 255, 255);
+        actext-decoration: none;
+      }
+    }
+    h1, h2, h3, h4, p {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline;
+  }
+
+  &:hover .background {
+      opacity: 0.5; // target opacity on hover
+  }
+
+  &:hover .info {
+      opacity: 1; // target opacity on hover
+  }
+
+  &:hover .background, .info {
+      -webkit-transition: $hover-info-transition;
+         -moz-transition: $hover-info-transition;
+           -o-transition: $hover-info-transition;
+              transition: $hover-info-transition;
+  }
+}
+
+/*********************************************/
+/************* People Formatting *************/
+/*********************************************/
+
+$people-image-width: 300px;
+$people-image-height: 200px;
+.people-grid {
+
+  .filters {
+    @extend .text-center;
+    padding-bottom: 20px;
+  }
+
+  .grid {
+    margin: 0 auto; /* centered */
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .grid-item {
+      @extend .hover-info; // not necessary but useful here
+      float: left;
+      width: $people-image-width;
+      height: $people-image-height;
+      padding: 0px;
+      margin-bottom: 10px; // the side-margin is 'gutter' in the JS in head.html
+    }
+
+    .grid-image {
+      img {
+        width: $people-image-width;
+        height: $people-image-height;
+        border: 2px solid #333;
+      }
+    }
   }
 }
 

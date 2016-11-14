@@ -19,6 +19,7 @@
   <script src="/js/return_to_top.js"></script>
   <script src="/js/return_to_top.js"></script>
   <script src="/js/tooltips.js"></script>
+  <script src="/js/isotope.pkgd.min.js"></script>
   <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
 
@@ -32,6 +33,25 @@
       $('#slideshow').show();
       //$('#slideshow').fadeIn(1000); // (for fast display instead)
     });
+  </script>
+  {% endif %}
+
+  {% if page.grid %}
+  <!-- Grid -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+      // init grid
+      var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        {{ page.grid }}
+      });
+
+      // bind filter button click
+      $('#filters').on( 'click', 'label', function() {
+        var filterValue = $( this ).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+      });
+  });
   </script>
   {% endif %}
 

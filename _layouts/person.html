@@ -1,0 +1,42 @@
+---
+layout: plain
+---
+
+{% capture title %}
+  <h2>{{ page.title }}</h2>
+  {% if page.position %}
+  <h4>{{ page.position }}</h4>
+  {% endif %}
+  {% include post_navigation.html asc = true %}
+{% endcapture %}
+
+{% include title.html title = title %}
+
+<div class="container">
+
+	<!-- fixme from here on down needs some series rework -->
+
+	<div class = "PersonContact"> <!-- PersonContact -->
+	<span style="font-size:14px;">{{ page.name }}</span> &nbsp;&nbsp;
+	{% if page.office %}{{ page.office }}{% endif %} &nbsp;&nbsp;
+	{% if page.phone %}{{ page.phone }}{% endif %}&nbsp;&nbsp;
+	<div class="PersonEmail">{% if page.email %}<a href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}</div>&nbsp;&nbsp;
+	</div>
+
+	<div class = "PersonPage">
+
+		<div class="PersonWrap">
+			<div class="PersonName">
+			 	{{ page.name }}
+			</div>
+
+			<div class ="PersonBio">
+			{{ content }}
+			</div>
+		</div> <!-- PersonWrap -->
+
+	<img src="{{ page.picture_page }}" />
+
+	</div>  <!-- PersonPage -->
+
+</div>
