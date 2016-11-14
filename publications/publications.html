@@ -2,13 +2,15 @@
 layout: default
 menu: Publications
 icon: fa fa-institution
-image: yellowstone_lowres.jpg
-align: left
-status: disabled
+title: Publications
+title_height: 80px
+image:
+  - file: /images/publications/phaedoria_book.jpg
+image_height: 200px
 weight: 4
+category: publications
 permalink: /publications/
 ---
 
-<h1>Publications</h1>
-
-<script src="http://bibbase.org/show?bib=www.kopflab.com/publications/references.bib&jsonp=1"></script>
+<script src="http://bibbase.org/show?bib={{ site.url }}/publications/references.bib&jsonp=1"></script>
+<script type="text/javascript">$('#slideshow').show();</script>
