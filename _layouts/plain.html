@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% if site.map_location %}
+    <div id="googlemaps"></div>
+    {% endif %}
+    {% include footer.html %}
+  </body>
+  {% include googlemap.html %}
+</html>

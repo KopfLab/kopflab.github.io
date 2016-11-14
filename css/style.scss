@@ -19,7 +19,6 @@ $brand-info: rgb(123, 165, 244); // for info buttons
 $navbar-inverse-bg: rgb(25, 25, 25);
 $navbar-inverse-border: $navbar-inverse-bg;
 
-
 // Inverted navbar links
 $navbar-inverse-link-color:                 #cfb87b;
 $navbar-inverse-link-hover-color:           lighten($navbar-inverse-link-color, 50%);
@@ -42,15 +41,21 @@ $title-link-color: #cfb87b;
 $title-link-color-active: lighten($title-link-color, 50%);
 $title-height: 80px; // minimum height
 $title-image-height: 300px;
-$title-image-border-bottom: $navbar-border-bottom;
+$title-image-border-bottom: 2px solid rgb(0, 0, 0);//$navbar-border-bottom;
 $title-image-caption-color: rgb(210, 210, 210);
+$body-text-color: rgb(0, 0, 0);
+$body-link-color: rgb(30, 135, 212);
+$body-link-color-active: lighten($body-link-color, 15%);
 $map-height: 200px;
 $footer-bgrd-color: $logo-bgrd-color;
 $footer-text-color: rgb(255, 255, 255);
 $footer-link-color: #cfb87b;
 $footer-link-color-active: lighten($footer-link-color, 50%);
 
-/***** Custom CSS *****/
+/*****************************************************/
+/************* Default Layout Formatting *************/
+/*****************************************************/
+
 @media (min-width: 768px){
     .navbar-nav{
         float:none;
@@ -69,6 +74,14 @@ html {
 
 body {
   margin-bottom: 0px; //$navbar-height;
+  color: $body-text-color;
+  a {
+    color: $body-link-color;
+    &:active, &:focus, &:hover {
+      color: $body-link-color-active;
+      text-decoration: none;
+    }
+  }
 }
 
 /***** Logo (heading) *****/
@@ -109,6 +122,7 @@ body {
 .slideshow-container {
 
   border-bottom: $title-image-border-bottom;
+  margin-bottom: 10px;
   background-color: rgb(0, 0, 0);
 
   .slideshow-title {
@@ -143,12 +157,15 @@ body {
             text-decoration: none;
       	  }
       	}
-        h1, h2, h3, h4 {
+        h1, h2, h3, h4, p {
           margin: 0px;
           padding-left: 65px;
           padding-right: 65px;
           padding-top: 5px;
           padding-bottom: 5px;
+        }
+        h2 { // a little smaller than for regular title
+          font-size: $font-size-h3;
         }
       }
     }
@@ -207,7 +224,7 @@ body {
   display:none; // to allow random pick of first image
 }
 
-/* Fade transitions for carousel (add "carousel-fade" to class of <div id="slideshow">) */
+/* Fade transitions for slideshow (add "carousel-fade" to class of <div id="slideshow">) */
 $slide-transition: 0.7s ease-in-out opacity;
 .carousel-fade {
     .carousel-inner {
@@ -244,38 +261,22 @@ $slide-transition: 0.7s ease-in-out opacity;
     }
 }
 
-/**** General CSS ****/
-
-.gap-right {
-  margin-right: 10px;
-}
-
-.gap-left {
-  margin-left: 10px;
-}
-
-.framed {
-  border: 2px solid #000000;
-}
-
-/***** Image settings ******/
-.border {
-  border: 2px solid rgb(33,33,33);
-}
-
-/**** Regular page title ****/
+/**** Non-image page title ****/
 .title-container{
   @extend .container;
+  padding-top: 0px;
   text-align: center;
 
   // page divider
   $divider-color: #ddd;
   .page-divider {
     display: block;
-    width: 50%;
+    width: 70%;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-top: 1px solid $divider-color;
+
     .one {
       position: relative;
       top: -9px;
@@ -301,13 +302,12 @@ $slide-transition: 0.7s ease-in-out opacity;
   }
 }
 
-
 /***** Map *****/
 #googlemaps {
+  margin-top: 10px;
   border-top: 2px solid rgb(0, 0, 0);
   height: $map-height;
 }
-
 
 /**** Footer ****/
 .footer-container {
@@ -380,4 +380,91 @@ $slide-transition: 0.7s ease-in-out opacity;
 }
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
+}
+
+
+/*****************************************************/
+/***************** Posts Formatting ******************/
+/*****************************************************/
+
+.post-navigation {
+  @extend .row;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: -10px;
+  span, a {
+    color: $body-link-color;
+    &:active, &:focus, &:hover {
+      color: $body-link-color-active;
+      text-decoration: none;
+    }
+  }
+  .next-post{
+    @extend .col-xs-6;
+    @extend .text-left;
+  }
+  .prev-post{
+    @extend .col-xs-6;
+    @extend .text-right;
+  }
+}
+
+/*****************************************************/
+/***************** News Formatting *******************/
+/*****************************************************/
+
+$news-date-bg-color: $body-link-color;//#cfb87b;
+$news-date-text-color: #fff;
+.news-item {
+  padding-top: 40px;
+  .news-date {
+    margin-left: 10px;
+    margin-right: 50px;
+  	height: 84px;
+  	width: 84px;
+  	border-radius: 42px;
+  	background: $news-date-bg-color;
+  	text-align: center;
+    padding: 0 !important;
+    display: block;
+    line-height: 1em;
+
+    .day{
+      color: $news-date-text-color;
+      padding-top: 15px;
+    	font-size: 1.5em;
+    }
+
+    .month{
+      color: darken($news-date-text-color, 10%);
+      padding-top: 5px;
+    	font-size: .8em;
+    }
+
+    .year{
+      color: darken($news-date-text-color, 10%);
+      padding-top: 2px;
+    	font-size: .6em;
+    }
+  }
+}
+
+/**** General CSS ****/
+
+.gap-right {
+  margin-right: 10px;
+}
+
+.gap-left {
+  margin-left: 10px;
+}
+
+.framed {
+  border: 2px solid #000000;
+}
+
+/***** Image settings ******/
+.border {
+  border: 2px solid rgb(33,33,33);
 }
