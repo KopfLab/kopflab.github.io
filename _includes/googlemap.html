@@ -1,9 +1,9 @@
-{% if page.map_location %}
+{% if site.map_location %}
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
 //<![CDATA[
 var geocoder = new google.maps.Geocoder();
-var address = "{{ page.map_location }}";
+var address = "{{ site.map_location }}";
 var latitude;
 var longitude;
 
@@ -51,7 +51,7 @@ function initGoogleMap() {
 	map.mapTypes.set('Styled', styledMapType);
 
 	var infowindow = new google.maps.InfoWindow({
-	      content: "<div class='iwContent'>{{ page.map_label }}</div>"
+	      content: "<div class='iwContent'>{{ site.map_label }}</div>"
 	});
 	google.maps.event.addListener(marker, 'click', function() {
 	    infowindow.open(map,marker);

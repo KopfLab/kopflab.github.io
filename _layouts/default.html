@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    <!-- Content -->
-    <div class="container">
-      {{ content }}
-    </div>
-    {% if page.map_location %}
-    <div id="googlemaps"></div>
-    {% endif %}
-    {% include footer.html %}
-  </body>
-  {% include googlemap.html %}
-</html>
+---
+layout: plain
+---
+
+{% capture title %}
+  <h2>{{ page.title }}</h2>
+  {% if page.subtitle %}
+  <h4>{{ page.subtitle }}</h4>
+  {% endif %}
+{% endcapture %}
+
+{% include title.html title = title %}
+
+<div class="container">
+  {{ content }}
+</div>
