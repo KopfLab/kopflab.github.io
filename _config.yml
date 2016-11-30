@@ -16,7 +16,7 @@ map_label: Benson Earth Sciences, Colorado Avenue, Boulder, CO
 description: >
   Geomicrobial Physiology Lab at the University of Colorado in Boulder
 url: "http://kopflab.com"
-icon: "/images/cubes_sil.png"
+icon: "/header_images/cubes_sil.png"
 permalink: /:categories/:title/
 front_page_news: 5
 
