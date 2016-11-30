@@ -44,9 +44,9 @@ layout: plain
 <div class="container">
 
   {% if page.picture %}
-  <div class="center">
-    <img src="{{ page.picture_page }}" />
-  </div>
+  <center>
+    {% include image.html img=page.picture caption=page.caption %}
+  </center>
   {% endif %}
 
 	{{ content }}
