@@ -7,6 +7,35 @@ layout: plain
   {% if page.position %}
   <h4>{{ page.position }}</h4>
   {% endif %}
+
+  <p class="medium">
+    <a href="mailto:{{ page.email }}" data-toggle="tooltip" data-delay='{"show": 100, "hide": 100 }'
+        data-placement="bottom" title="{{ page.email }}">
+      <span class="info"><i class="glyphicon glyphicon-send"></i>&nbsp;Email</span>
+    </a>
+    {% if page.phone %}
+    &nbsp;|&nbsp;
+    <a href="tel:{{ page.phone }}" data-toggle="tooltip" data-delay='{"show": 100, "hide": 100 }'
+        data-placement="bottom" title="{{ page.phone }}">
+      <span class="info"><i class="glyphicon glyphicon-earphone"></i>&nbsp;Phone</span>
+    </a>
+    {% endif %}
+    {% if page.github %}
+    &nbsp;|&nbsp;
+    <a href="http://www.github.com/{{ page.github }}/" target = "_new" data-toggle="tooltip"
+        data-delay='{"show": 100, "hide": 100 }' data-placement="bottom" title="{{ page.github }}">
+      <span class="info"><i class="fa fa-github"></i>&nbsp;GitHub</span>
+    </a>
+    {% endif %}
+    {% if page.address %}
+    &nbsp;|&nbsp;
+    <a href="#" data-toggle="tooltip" data-delay='{"show": 300, "hide": 2000 }' data-html="true"
+        data-placement="bottom" title="{{ page.address }}">
+      <span class="info"><i class="glyphicon glyphicon-envelope"></i>&nbsp;Address</span>
+    </a>
+    {% endif %}
+  </p>
+
   {% include post_navigation.html asc = true %}
 {% endcapture %}
 
@@ -14,29 +43,12 @@ layout: plain
 
 <div class="container">
 
-	<!-- fixme from here on down needs some series rework -->
+  {% if page.picture %}
+  <div class="center">
+    <img src="{{ page.picture_page }}" />
+  </div>
+  {% endif %}
 
-	<div class = "PersonContact"> <!-- PersonContact -->
-	<span style="font-size:14px;">{{ page.name }}</span> &nbsp;&nbsp;
-	{% if page.office %}{{ page.office }}{% endif %} &nbsp;&nbsp;
-	{% if page.phone %}{{ page.phone }}{% endif %}&nbsp;&nbsp;
-	<div class="PersonEmail">{% if page.email %}<a href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}</div>&nbsp;&nbsp;
-	</div>
-
-	<div class = "PersonPage">
-
-		<div class="PersonWrap">
-			<div class="PersonName">
-			 	{{ page.name }}
-			</div>
-
-			<div class ="PersonBio">
-			{{ content }}
-			</div>
-		</div> <!-- PersonWrap -->
-
-	<img src="{{ page.picture_page }}" />
-
-	</div>  <!-- PersonPage -->
+	{{ content }}
 
 </div>

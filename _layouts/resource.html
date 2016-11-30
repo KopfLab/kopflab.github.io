@@ -1,5 +1,17 @@
 ---
-layout: default
+layout: plain
 ---
 
-{{ content }}
+{% capture title %}
+  <h2>{{ page.title }}</h2>
+  {% if page.subtitle %}
+  <h4>{{ page.subtitle }}</h4>
+  {% endif %}
+  {% include post_navigation.html %}
+{% endcapture %}
+
+{% include title.html title = title %}
+
+<div class="container">
+  {{ content }}
+</div>
