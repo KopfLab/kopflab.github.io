@@ -1,0 +1,7 @@
+{% assign exists = 'no' %}
+{% for static_file in site.static_files %}
+    {% if static_file.path == include.file %}
+        {% assign exists = 'yes' %}
+    {% endif %}
+{% endfor %}
+{{exists}}
