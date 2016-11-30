@@ -57,7 +57,11 @@ weight: 1
 			</div></div></div>
 
 			<a href="{{ person.url }}" class="background">
-				<div class="grid-image"><img src="{{ person.picture_profile }}"/></div>
+				<div class="grid-image">
+          {% if person.thumbnail %}<img src="{{ person.thumbnail }}"/>
+          {% else %}<br /><center>{{ person.title }}</center>
+          {% endif %}
+        </div>
 			</a>
 		</div>
 		{% endfor %}
