@@ -386,6 +386,7 @@ $slide-transition: 0.7s ease-in-out opacity;
 
 /*****************************************************/
 /***************** Posts Formatting ******************/
+/******* This is both for news and for people ********/
 /*****************************************************/
 
 .post-navigation {
@@ -489,7 +490,7 @@ $hover-info-transition: 0.5s ease opacity;
 /*********************************************/
 
 $people-image-width: 300px;
-$people-image-height: 200px;
+$people-image-height: 225px;
 .people-grid {
 
   .filters {
@@ -517,8 +518,8 @@ $people-image-height: 200px;
 
     .grid-image {
       img {
-        width: $people-image-width;
-        height: $people-image-height;
+        width: 100%;
+        height: auto;
         border: 2px solid #333;
       }
     }
