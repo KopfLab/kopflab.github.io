@@ -1,6 +1,13 @@
+# exclude compiled site
 _site
 _ignore
 .sass-cache
-originals/
-*_original.*
+
+# exclude pdfs
 *.pdf
+
+# exclude original and hidden images
+.originals/
+*_original.*
+*\.*\.jpg
+*\.*\.png
