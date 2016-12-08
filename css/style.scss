@@ -489,8 +489,9 @@ $hover-info-transition: 0.5s ease opacity;
 /************* People Formatting *************/
 /*********************************************/
 
-$people-image-width: 300px;
-$people-image-height: 225px;
+$people-image-width: 292px;
+$people-image-height: 219px;
+$people-image-margin-bottom: 23px;
 .people-grid {
 
   .filters {
@@ -513,14 +514,14 @@ $people-image-height: 225px;
       width: $people-image-width;
       height: $people-image-height;
       padding: 0px;
-      margin-bottom: 10px; // the side-margin is 'gutter' in the JS in head.html
+      margin-bottom: $people-image-margin-bottom; // the side-margin is 'gutter' in the page.grid
     }
 
     .grid-image {
       img {
         width: 100%;
         height: auto;
-        border: 2px solid #333;
+        border: 2px solid #555;
       }
     }
   }
