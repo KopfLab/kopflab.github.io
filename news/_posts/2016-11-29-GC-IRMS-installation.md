@@ -1,6 +1,17 @@
 ---
 title: GC-IMRS installation
 layout: news_item
+gallery:
+  - file: /news/images/gc_irms_boxes.jpg
+    title: GC-IRMS arrived
+  - file: /news/images/gc_irms_install.jpg
+    title: Lifting the magnet into place
+  - file: /news/images/gc_irms_install2.jpg
+    title: Connecting the peripherals
+  - file: /news/images/gc_irms_install3.jpg
+    title: IRMS in place!
+  - file: /news/images/gc_irms_boba_fett.jpg
+    title: Boba Fett fully operational
 ---
 
 ### The installation of our GC-IRMS is under way!
