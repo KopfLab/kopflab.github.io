@@ -1,0 +1,5 @@
+{% for img in page.gallery %}
+  <div class="gallery-image col-lg-4 col-sm-6 col-xs-12">
+    {% include image.html img=img.file caption=img.title width="100%" %}
+  </div>
+{% endfor %}
