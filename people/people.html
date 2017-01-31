@@ -29,11 +29,11 @@ grid: |
 weight: 1
 ---
 
-<h2>Who we are</h2>
+<br />
 
 <div class="people-grid">
 
-	<!-- Filters are overkill for now --><!--
+	<!-- Filters -->
 	<div class="filters">
 		<div id="filters" class="btn-group" data-toggle="buttons">
 				<label class="btn btn-primary active" data-filter="*"><input type="radio" checked> All</label>
@@ -42,10 +42,12 @@ weight: 1
 				{% endfor %}
 		</div>
 	</div>
-	-->
+
+  <h3>Geomicrobial Physiology Lab</h3>
 
 	<div class="grid">
 		{% for person in site.categories.people reversed %}
+    {% unless person.collaborator %}
 		<div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
 			<div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
 				<div class="info">
@@ -64,6 +66,39 @@ weight: 1
         </div>
 			</a>
 		</div>
+    {% endunless %}
 		{% endfor %}
 	</div>
+
+  <h3>Joint Geobiology Labs (Faculty & Staff)</h3>
+
+  <div class="grid">
+    {% for person in site.categories.people reversed %}
+    {% if person.collaborator %}
+    <div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
+      <div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
+        <div class="info">
+          <a href="{{ person.url }}">
+            <h4>{{ person.title }}</h4>
+            <p>{{ person.position }}</p>
+          </a>
+        </div>
+      </div></div></div>
+
+      {% if person.website %}
+      <a href="{{ person.website }}" target="_new" class="background">
+      {% else %}
+      <a href="{{ person.website}}{{ person.url }}" class="background">
+      {% endif %}
+        <div class="grid-image">
+          {% if person.thumbnail %}<img src="{{ person.thumbnail }}"/>
+          {% else %}<br /><center>{{ person.title }}</center>
+          {% endif %}
+        </div>
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
 </div>
