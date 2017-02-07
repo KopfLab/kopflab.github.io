@@ -75,21 +75,24 @@ weight: 1
   <div class="grid">
     {% for person in site.categories.people reversed %}
     {% if person.collaborator %}
+
+    {% if person.website %}
+      {% assign web_url = person.website %}
+    {% else %}
+      {% assign web_url = person.url %}
+    {% endif %}
+
     <div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
       <div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
         <div class="info">
-          <a href="{{ person.url }}">
+          <a href="{{ web_url }}">
             <h4>{{ person.title }}</h4>
             <p>{{ person.position }}</p>
           </a>
         </div>
       </div></div></div>
 
-      {% if person.website %}
-      <a href="{{ person.website }}" target="_new" class="background">
-      {% else %}
-      <a href="{{ person.website}}{{ person.url }}" class="background">
-      {% endif %}
+      <a href="{{ web_url }}" class="background">
         <div class="grid-image">
           {% if person.thumbnail %}<img src="{{ person.thumbnail }}"/>
           {% else %}<br /><center>{{ person.title }}</center>
