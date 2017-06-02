@@ -18,7 +18,7 @@ description: >
 url: "http://kopflab.com"
 icon: "/header_images/cubes_sil.png"
 permalink: /:categories/:title/
-front_page_news: 5
+front_page_news: 4
 
 # Build settings
 markdown: kramdown
