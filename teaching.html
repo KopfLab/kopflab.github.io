@@ -1,0 +1,34 @@
+---
+layout: default
+menu: Teaching
+icon: fa fa-book
+weight: 3
+title: Teaching
+category: teaching
+permalink: /teaching/
+---
+
+{% for class in site.teaching %}
+
+<div class="media">
+  <div class="media-left">
+    <a href="{{ class.url }}">
+      <img class="media-object" src="{{ class.picture }}" width = "80px">
+    </a>
+  </div>
+  <div class="media-body">
+    <a href="{{ class.url }}">
+      <h4 class="media-heading">{{ class.title }}</h4>
+    </a>
+    <h5>
+      <strong>Next class</strong>: {{ class.term }} |
+      <strong>Time</strong>: {{ class.time }} |
+      <strong>Location</strong>: {{ class.location }}
+    </h5>
+    {% if class.catalog %}
+    <h5><strong>Course #: </strong>{{ class.catalog }}</h5>
+    {% endif %}
+  </div>
+</div>
+
+{% endfor %}

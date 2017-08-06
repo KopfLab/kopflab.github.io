@@ -10,10 +10,15 @@
 {%    assign thumb = include.img   %}
 {%    endunless %}
 {%  endif %}
+{% if include.class %}
+{%    assign class = include.class %}
+{% else %}
+{%    assign class = "border" %}
+{% endif %}
 <a href="{{ include.img }}"
   data-lightbox="team" data-title="{{ include.caption }}">
   <img src="{{ thumb }}"
-    title="{{ include.caption }}" class="border"
+    title="{{ include.caption }}" class="{{ class }}"
     {% if include.height %} height="{{ include.height }}" {% endif %}
     {% if include.width %} width="{{ include.width }}" {% endif %}>
 </a>

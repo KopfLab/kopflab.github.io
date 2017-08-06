@@ -27,3 +27,9 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
   - jekyll-gist
+
+# Non-news data
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/

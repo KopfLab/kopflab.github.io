@@ -1,0 +1,31 @@
+---
+layout: plain
+---
+
+{% capture title %}
+  <h2>{{ page.title }}</h2>
+  {% if page.subtitle %}
+  <h4>{{ page.subtitle }}</h4>
+  {% endif %}
+  <h5>
+    <strong>Next class</strong>: {{ page.term }} |
+    <strong>Time</strong>: {{ page.time }} |
+    <strong>Location</strong>: {{ page.location }}
+  </h5>
+  {% if page.catalog %}
+  <h5><strong>Course #: </strong>{{ page.catalog }}</h5>
+  {% endif %}
+{% endcapture %}
+
+{% include title.html title = title %}
+
+<div class="container">
+  {{ content }}
+</div>
+
+{% if page.picture %}
+<br/>
+<center>
+  {% include image.html img=page.picture class="" %}
+</center>
+{% endif %}
