@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Computational Tools for Data Science
+title: Computational Tools
 catalog: GEOL 5700
 term: Fall 2018
 time: TBD
