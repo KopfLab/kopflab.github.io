@@ -25,7 +25,7 @@ front_page_news: 4
 markdown: kramdown
 
 # Sitemap
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-gist
 
