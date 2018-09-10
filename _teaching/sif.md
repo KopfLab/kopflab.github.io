@@ -1,6 +1,8 @@
 ---
 layout: class
-title: Stable isotope fractionation
+title: Stable Isotope Fractionation
+level: "upper level undergraduates and graduate students"
+weight: 3
 subtitle: in biogeochemical processes
 term: Spring 2018
 time: TBD

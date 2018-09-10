@@ -21,11 +21,12 @@ layout: plain
 
 <div class="container">
   {{ content }}
-</div>
 
-{% if page.picture %}
-<br/>
-<center>
-  {% include image.html img=page.picture class="" %}
-</center>
-{% endif %}
+  {% if page.picture %}
+  <br/>
+  <center>
+    {% include image.html img=page.picture class="" width="80%" %}
+  </center>
+  {% endif %}
+
+</div>

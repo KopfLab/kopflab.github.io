@@ -8,18 +8,22 @@ category: teaching
 permalink: /teaching/
 ---
 
-{% for class in site.teaching %}
+{% assign classes = site.teaching | sort:"weight"  %}
+{% for class in classes %}
 
 <div class="media">
   <div class="media-left">
     <a href="{{ class.url }}">
-      <img class="media-object" src="{{ class.picture }}" width = "80px">
+      <img class="media-object" src="{% if class.thumbnail %}{{ class.thumbnail }}{% else %}{{ class.picture }}{% endif %}" width = "80px">
     </a>
   </div>
   <div class="media-body">
     <a href="{{ class.url }}">
       <h4 class="media-heading">{{ class.title }}</h4>
     </a>
+    <h5>
+      <strong>For</strong>: {{ class.level }}
+    </h5>
     <h5>
       <strong>Next class</strong>: {{ class.term }} |
       <strong>Time</strong>: {{ class.time }} |
