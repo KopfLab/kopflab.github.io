@@ -1,8 +1,10 @@
 ---
 layout: class
-title: Stable isotope fractionation
+title: Stable Isotope Fractionation
+level: "upper level undergraduates and graduate students"
+weight: 3
 subtitle: in biogeochemical processes
-term: Spring 2018
+term: Fall 2019
 time: TBD
 location: TBD
 picture: /teaching/pictures/sif_flyer.jpg
