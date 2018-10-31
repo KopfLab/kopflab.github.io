@@ -47,7 +47,7 @@ weight: 1
 
 	<div class="grid">
 		{% for person in site.categories.people reversed %}
-    {% unless person.collaborator %}
+    {% unless person.collaborator or person.alumni %}
 		<div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
 			<div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
 				<div class="info">
@@ -75,6 +75,40 @@ weight: 1
   <div class="grid">
     {% for person in site.categories.people reversed %}
     {% if person.collaborator %}
+
+    {% if person.website %}
+      {% assign web_url = person.website %}
+    {% else %}
+      {% assign web_url = person.url %}
+    {% endif %}
+
+    <div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
+      <div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
+        <div class="info">
+          <a href="{{ web_url }}">
+            <h4>{{ person.title }}</h4>
+            <p>{{ person.position }}</p>
+          </a>
+        </div>
+      </div></div></div>
+
+      <a href="{{ web_url }}" class="background">
+        <div class="grid-image">
+          {% if person.thumbnail %}<img src="{{ person.thumbnail }}"/>
+          {% else %}<br /><center>{{ person.title }}</center>
+          {% endif %}
+        </div>
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>Alumni</h3>
+
+  <div class="grid">
+    {% for person in site.categories.people reversed %}
+    {% if person.alumni %}
 
     {% if person.website %}
       {% assign web_url = person.website %}
