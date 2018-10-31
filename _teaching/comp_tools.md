@@ -5,9 +5,9 @@ level: "graduate students"
 weight: 4
 catalog: GEOL 5700
 term: Fall 2018
-time: TBD
-location: TBD
-credits: 3
+time: 4-6pm
+location: Benson 1B81
+credits: 2
 picture: /teaching/pictures/comp_tools.png
 ---
 
