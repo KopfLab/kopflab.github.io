@@ -7,6 +7,25 @@ layout: plain
   {% if page.subtitle %}
   <h4>{{ page.subtitle }}</h4>
   {% endif %}
+
+  {% if page.github %}
+  <p class="medium">
+    <a href="http://www.github.com/{{ page.github }}/" target = "_new" data-toggle="tooltip"
+        data-delay='{"show": 100, "hide": 100 }' data-placement="bottom" title="{{ page.github }}">
+      <span class="info"><i class="fa fa-github"></i>&nbsp;GitHub</span>
+    </a>
+    {% if page.scad %}
+    &nbsp;|&nbsp;
+    <a href="http://www.github.com/{{ page.github }}/blob/{{ page.scad }}" target = "_new" data-toggle="tooltip"
+        data-delay='{"show": 100, "hide": 100 }' data-placement="bottom" title="Open SCAD File">
+      <span class="info">
+        <img src="/resources/scad.png" height="25px"/>&nbspDesign File
+      </span>
+    </a>
+    {% endif %}
+  </p>
+  {% endif %}
+
   {% include post_navigation.html %}
 {% endcapture %}
 
@@ -14,4 +33,20 @@ layout: plain
 
 <div class="container">
   {{ content }}
+
+  {% if page.stl %}
+
+  {% for stl in page.stl %}
+
+    <h3>
+    {% if stl.title %} {{ stl.title }} {% endif %}
+    <a href="https://www.github.com/{{ page.github }}/blob/{{ stl.file }}" class="glyphicon glyphicon-link"></a>
+    </h3>
+
+    <script src="https://embed.github.com/view/3d/{{ page.github }}/{{ stl.file }}"></script>
+
+  {% endfor %}
+
+  {% endif %}
+
 </div>
