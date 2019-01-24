@@ -3,7 +3,11 @@ layout: plain
 ---
 
 {% capture title %}
-  <h2>{{ page.title }}</h2>
+  {% if page.title_html %}
+    {{ page.title_html }}
+  {% else %}
+    <h2>{{ page.title }}</h2>
+  {% endif %}
   {% if page.subtitle %}
   <h4>{{ page.subtitle }}</h4>
   {% endif %}
