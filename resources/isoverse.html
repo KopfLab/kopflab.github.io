@@ -1,0 +1,49 @@
+---
+layout: default
+title: isoverse
+title_html: >
+  <br/><a href="http://www.isoverse.org"><img src="/resources/images/isoverse/isoverse_logo_thumb.png" align="center" height="277"/></a>
+  <h3>open-source data tools for stable isotopes</h3>
+category: resources
+permalink: /isoverse/
+---
+
+<div class="media">
+  <div class="media-heading"><h3><a href="https://www.isoverse.org">isoverse</a></h3></div>
+  <div class="media-body">
+      Isoverse is a suite of platform-independent (Windows, Mac, Linux), open-source data tools for the efficient and reproducible processing of stable isotope data. Although written primarily in R, it can be used in both RMarkdown as well as Jupyter data processing notebooks. Due to the design based on the popular tidyverse style of R programming, all isoverse packages are easily extendable and work great with tidyverse packages such as tidyr, dplyr and ggplot.
+  </div>
+  <div class="media-right">
+    <a href="http://www.isoverse.org"><img src="/resources/images/isoverse/isoverse_logo_thumb.png" align="center" height="138.5"/></a>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-heading"><h3><a href="https://isoreader.kopflab.org">isoreader</a></h3></div>
+  <div class="media-body">
+    This package is intended as a unified one-stop command line interface to all common IRMS (isotope ratio mass spectrometry) file formats used in stable isotope geochemistry. It enables the reading and processing of stable isotope data directly from the data files and thus provides a foundational tool for platform-independent, efficient and reproducible data reduction. Although implemented in R, it provides easy export to Python using the shared R/Python feather file format. Due to the implementation following the example of tidyverse's readr, isoreader takes care of error catching to avoid pipeline breaks because of problems encountered in source data files. At present, it can read most Thermo dual inlet (.did, .caf) and continuous flow (.dxf, .cf) data files as well as Elementar continuous flow data archives (.iarc) and Nu dual inlet files (.txt) with additional extensions for other file formats in the works.
+  </div>
+  <div class="media-right">
+    <a href="https://isoreader.kopflab.org"><img src="/resources/images/isoverse/isoreader_logo_thumb.png" align="center" height="138.5"/></a>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-heading"><h3><a href="https://isoprocessor.kopflab.org">isoprocessor</a></h3></div>
+  <div class="media-body">
+    This package provides broad functionality for IRMS data processing and reduction pipelines including signal conversion (voltage to current and back), time scaling (continuous flow chromatograms), isotope ratio calculations, delta value calculations, as well as easy-to-use highly flexible data calibration and visualization pipelines for continuous flow data. Additional tools on O17 corrections, H3 factor calculation, peak detection, baseline correction, etc are in thw works.
+  </div>
+  <div class="media-right">
+    <a href="https://isoprocessor.kopflab.org"><img src="/resources/images/isoverse/isoprocessor_logo_thumb.png" align="center" height="150"/></a>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-heading"><h3><a href="https://isoviewer.kopflab.org">isoviewer</a></h3></div>
+  <div class="media-body">
+    The isoviewer graphical user interface (GUI) provided by this package is based on the functionlity implemented by the isoreader and isoprocessor packages. The purpose of the GUI is two fold. First and foremost, it is a learning tool to illustrate how to build literate RMarkdown data processing files for IRMS data using the underlying packages as a unified interface for reading, converting and quickly visualizing various raw IRMS data file formats. The second purpose is to provide an example for a web-based IRMS data repository that is easy to run on any computer/server completely platform-independent and open-source. Towards this goal, the isoviewer package provides some rudimentary GUI modules that can be used in other more customized applications.
+  </div>
+  <div class="media-right">
+    <a href="https://isoviewer.kopflab.org"><img src="/resources/images/isoverse/isoviewer_logo_thumb.png" align="center" height="150"/></a>
+  </div>
+</div>
