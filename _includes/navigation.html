@@ -1,0 +1,47 @@
+<!-- find previous and next page within items -->
+{% for item in include.items %}
+  {% if item.url == page.url %}
+    {% assign index0 = forloop.index0 %}
+    {% assign index1 = forloop.index %}
+  {% endif %}
+{% endfor %}
+{% for item in include.items %}
+  {% if index0 == forloop.index %}
+    {% assign next = item %}
+  {% endif %}
+  {% if index1 == forloop.index0 %}
+    {% assign prev = item %}
+  {% endif %}
+{% endfor %}
+
+{% if include.asc %}
+  <!-- posts sorted in ascending order -->
+  {% assign tmp_post = prev %}
+  {% assign prev = next %}
+  {% assign next = tmp_post %}
+{% endif %}
+
+<div class="post-navigation">
+  <div class="next-post">
+    {% if next.url %}
+      <a href="{{ next.url }}">
+        <span class="fa-stack">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="page-number">{{ next.title }}</span>
+      </a>
+    {% endif %}
+  </div>
+  <div class="prev-post">
+    {% if prev.url %}
+      <a href="{{ prev.url }}">
+        <span class="page-number">{{ prev.title }}</span>
+        <span class="fa-stack">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    {% endif %}
+  </div>
+</div>
