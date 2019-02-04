@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Jesse Colangelo
+weight: 11
 position: C-DEBI postdoctoral fellow
 group: postdoc
 collaborator: yes

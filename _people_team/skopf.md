@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Sebastian Kopf
+weight: 1
 position: Geomicrobial Physiology Lab Principal Investigator
 group: faculty
 email: sebastian.kopf@colorado.edu

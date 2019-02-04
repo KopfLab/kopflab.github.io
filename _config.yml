@@ -43,6 +43,3 @@ collections:
   people_alumni:
     output: true
     permalink: /people/:path/
-  people_images:
-    output: false
-    permalink: /people/images/:path

@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Nabil Chaudhry
+weight: 6
 position: Research assistant
 group: staff
 alumni: yes

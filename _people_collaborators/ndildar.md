@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Nadia Dildar
+weight: 3
 position: Organic Geochemistry Lab Manager
 group: staff
 collaborator: yes

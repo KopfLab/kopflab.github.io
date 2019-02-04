@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Ciara Asamoto
+weight: 9
 position: Graduate Student
 group: grad
 email: Ciara.Asamoto@Colorado.EDU

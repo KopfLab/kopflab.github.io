@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Tali
+weight: 100
 position: Lab Snack Tester
 group: other
 collaborator:

@@ -1,0 +1,15 @@
+---
+layout: person
+title: Javier Lopez
+weight: 8
+position: Summer Research Assistant
+group: undergrad
+email: Javier.Lopez@colorado.edu
+phone:
+address:
+picture: 
+caption:  
+---
+
+
+## About

@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Shaelyn Silverman
+weight: 5
 position: Honors Thesis Student
 group: undergrad
 alumni: yes
