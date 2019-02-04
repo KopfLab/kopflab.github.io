@@ -2,9 +2,9 @@
 title: Lab renovations have begun
 layout: news_item
 gallery:
- - file: /news/images/construction_01.jpg
+ - file: /images/news/construction_01.jpg
    title: Geomicrobial Physiology Lab under construction
- - file: /news/images/construction_00.jpg
+ - file: /images/news/construction_00.jpg
    title: "First step: demolition"
 ---
 

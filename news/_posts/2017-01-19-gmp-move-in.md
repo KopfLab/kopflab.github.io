@@ -2,15 +2,15 @@
 title: Geomicrobial Physiology Lab ready
 layout: news_item
 gallery:
- - file: /news/images/lab_construction0.jpg
- - file: /news/images/lab_construction1.jpg
- - file: /news/images/lab_construction2.jpg
- - file: /news/images/lab_construction3.jpg
- - file: /news/images/lab_construction4.jpg
- - file: /news/images/lab_construction5.jpg
- - file: /news/images/lab_construction6.jpg
- - file: /news/images/lab_construction7.jpg
- - file: /news/images/lab_construction8.jpg
+ - file: /images/news/lab_construction0.jpg
+ - file: /images/news/lab_construction1.jpg
+ - file: /images/news/lab_construction2.jpg
+ - file: /images/news/lab_construction3.jpg
+ - file: /images/news/lab_construction4.jpg
+ - file: /images/news/lab_construction5.jpg
+ - file: /images/news/lab_construction6.jpg
+ - file: /images/news/lab_construction7.jpg
+ - file: /images/news/lab_construction8.jpg
 ---
 
 ### Our culturing lab finished construction!
@@ -20,9 +20,9 @@ After several months of [renovations](/news/gmp-lab-renovations-start/), the con
 #### Getting ready to rock
 
 <center>
-  {% include image.html img='/news/images/lab_finished.jpg' width="80%" caption='Setting up' %}
+  {% include image.html img='/images/news/lab_finished.jpg' width="80%" caption='Setting up' %}
   <br><br>
-  {% include image.html img='/news/images/lab_unpacking.jpg' width="80%" caption='Moving into the new lab!' %}
+  {% include image.html img='/images/news/lab_unpacking.jpg' width="80%" caption='Moving into the new lab!' %}
 </center>
 
 

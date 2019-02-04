@@ -2,7 +2,7 @@
 title: "Shaelyn's thesis defense"
 layout: news_item
 gallery:
- - file: /news/images/shaelyn_defense.jpg
+ - file: /images/news/shaelyn_defense.jpg
    title: Shaelyn with Sanjoy Som and Sebastian Kopf, and two of her cyanobacterial cultures
 ---
 
