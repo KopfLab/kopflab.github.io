@@ -6,7 +6,6 @@ group: postdoc
 collaborator: yes
 email: Amanda.L.Bender@colorado.edu
 website: https://www.colorado.edu/geologicalsciences/amanda-bender
-thumbnail: /people/images/amanda_thumbnail.jpg
 picture:
 caption:
 ---

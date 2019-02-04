@@ -8,8 +8,7 @@ alumni: yes
 email: nabil.chaudhry@colorado.edu
 phone:
 address:
-thumbnail: /people/images/nabil_thumbnail.jpg
-picture:  /people/images/nabil_mountains.jpg
+picture:  /images/people/nabil_mountains.jpg
 caption: In the mountains.
 ---
 

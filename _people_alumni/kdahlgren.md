@@ -9,7 +9,6 @@ alumni: yes
 website: https://www.colorado.edu/lab/cameron/kelsey-dahlgren
 phone:
 address:
-thumbnail: /people/images/kelsey_thumbnail.jpg
-picture:  /people/images/kelsey_mountains.jpg
+picture:  /images/people/kelsey_mountains.jpg
 caption:
 ---

@@ -7,8 +7,7 @@ group: grad
 email: Ciara.Asamoto@Colorado.EDU
 phone:
 address:
-thumbnail: /people/images/ciara_thumbnail.jpg
-picture: /people/images/ciara.jpg
+picture: /images/people/ciara.jpg
 caption:
 ---
 

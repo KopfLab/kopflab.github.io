@@ -9,6 +9,5 @@ alumni: yes
 website: https://www.colorado.edu/certificate/iqbiology/corinne-walsh
 phone:
 address:
-thumbnail: /people/images/corinne_thumbnail.jpg
 caption:
 ---

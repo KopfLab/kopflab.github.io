@@ -12,8 +12,7 @@ address: >
   4001 Discovery Drive<br/>
   Room #218, SEEC (Lab wing)<br/>
   Boulder, CO 80309
-thumbnail: /people/images/nadia_thumbnail.jpg
-picture:  /people/images/nadia_mountains.jpg
+picture:  /images/people/nadia_mountains.jpg
 caption: At Lost Gulch point on Flagstaff Mountain, Colorado
 ---
 

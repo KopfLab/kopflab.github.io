@@ -6,7 +6,6 @@ position: C-DEBI postdoctoral fellow
 group: postdoc
 collaborator: yes
 email: jesse.colangelo@colorado.edu
-thumbnail: /people/images/jesse_thumbnail.jpg
 picture:
 caption:
 ---

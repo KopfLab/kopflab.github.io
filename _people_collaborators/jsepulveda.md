@@ -13,5 +13,4 @@ address: >
   4001 Discovery Drive<br/>
   Office SEEC S256<br/>
   Boulder, CO 80309
-thumbnail: /people/images/julio_sepulveda.jpg
 ---

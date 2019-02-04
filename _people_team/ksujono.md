@@ -7,8 +7,7 @@ group: undergrad
 email: kasu0117@colorado.edu
 phone:
 address:
-thumbnail: /people/images/kasdi_thumbnail.jpg
-picture: /people/images/kasdi.jpg
+picture: /images/people/kasdi.jpg
 caption:  
 ---
 

@@ -12,8 +12,7 @@ address: >
   2200 Colorado Ave<br/>
   Office 246C<br/>
   Boulder, CO 80309
-thumbnail: /people/images/skopf_thumbnail.jpg
-picture:  /people/images/seb_mbl.jpg
+picture:  /images/people/seb_mbl.jpg
 caption: Collecting microbial mats at Little Sippewissett, Woods Hole
 ---
 

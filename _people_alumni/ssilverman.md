@@ -9,8 +9,7 @@ website: http://www.gps.caltech.edu/people/shaelyn-n-silverman
 email:
 phone:
 address:
-thumbnail: /people/images/shaelyn_thumbnail.jpg
-picture: /people/images/shaelyn_quandary.jpg
+picture: /images/people/shaelyn_quandary.jpg
 caption: On top of Quandary peak.
 ---
 
