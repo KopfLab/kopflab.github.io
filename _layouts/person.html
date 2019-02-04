@@ -36,7 +36,9 @@ layout: plain
     {% endif %}
   </p>
 
+  {% unless page.url == '/people/you/' %}
   {% include navigation.html %}
+  {% endunless %}
 
 {% endcapture %}
 

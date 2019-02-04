@@ -1,6 +1,7 @@
 ---
 layout: person
 title: Amanda Bender
+weight: 14
 position: Postdoctoral Scholar
 group: postdoc
 collaborator: yes
