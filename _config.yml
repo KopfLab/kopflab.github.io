@@ -34,3 +34,12 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
+  team:
+    output: true
+    permalink: /people/:path/
+  collaborators:
+    output: true
+    permalink: /people/:path/
+  alumni:
+    output: true
+    permalink: /people/:path/
