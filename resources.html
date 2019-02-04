@@ -1,0 +1,42 @@
+---
+layout: default
+menu: Resources
+icon: glyphicon glyphicon-cog
+title: Resources
+subtitle: <a href="#facilities">Facilities</a> | <!--<a href="#equipment">Equipment</a> |--> <a href="#labware">Labware</a> | <a href="#software">Software</a>
+title_height: 110px
+image:
+  - file: /images/header/resources/building_blocks.jpg
+image_height: 200px
+weight: 5
+category: resources
+permalink: /resources/
+---
+
+<h2> Open Source Policy </h2>
+
+We strive to make all our <a href = "#labware">lab designs</a> and <a href = "#software">software development</a> openly available and easily accessible to other scientists and students to advance the pace of discovery and promote collaboration.
+For details, please see the links below and the <a href="https://github.com/KopfLab">lab's repositories on GitHub</a>.
+
+<h2 id="facilities">Facilities</h2>
+
+{% assign resources = site.resources_facilities | sort:"weight" | reverse  %}
+{% for resource in resources %}
+  {% include list_resource.html resource=resource %}
+{% endfor %}
+
+<h2 id="labware">Labware</h2>
+
+{% assign resources = site.resources_labware | sort:"weight" | reverse  %}
+{% for resource in resources %}
+  {% include list_resource.html resource=resource %}
+{% endfor %}
+
+<h2 id="software">Software</h2>
+
+{% assign resources = site.resources_software | sort:"weight" | reverse  %}
+{% for resource in resources %}
+  {% unless resource.hidden %}
+    {% include list_resource.html resource=resource %}
+  {% endunless %}
+{% endfor %}

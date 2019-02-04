@@ -1,0 +1,36 @@
+{% assign resource = include.resource %}
+<div class="media">
+  <h4 class="media-heading">
+    <a href="{{ resource.url }}">{{ resource.title }}</a>
+    {% if resource.github %}
+    <a href="http://www.github.com/{{ resource.github }}/" target = "_new" data-toggle="tooltip"
+        data-delay='{"show": 100, "hide": 100 }' data-placement="bottom" title="Show on GitHub">
+      <span class="fa fa-github"></span>
+    </a>
+    {% endif %}
+    {% if resource.launch %}
+    <a href="{{ resource.launch }}" target = "_new" data-toggle="tooltip"
+        data-delay='{"show": 100, "hide": 100 }' data-placement="bottom" title="Launch application">
+      <span class="fa fa-rocket"></span>
+    </a>
+    {% endif %}
+  </h4>
+  <div class="media-body">
+    {% if resource.summary %}
+      {{ resource.summary }}
+    {% else %}
+      {{ resource.content | strip_html | truncatewords: 60 }}
+    {% endif %}
+    {% assign length = resource.content | number_of_words %}
+    {% if resource.summary or length > 60 %}
+    <a href="{{ resource.url }}"><strong>read more</strong></a>
+    {% endif %}
+  </div>
+  {% if resource.picture_html %}
+    <span class="media-right">{{ resource.picture_html }}</span>
+  {% elsif resource.picture %}
+    <span class="media-right">
+      {% include image.html img=resource.picture width="200px" %}
+    </span>
+  {% endif %}
+</div>

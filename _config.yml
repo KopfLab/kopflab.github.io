@@ -43,3 +43,15 @@ collections:
   people_alumni:
     output: true
     permalink: /people/:path/
+  resources_facilities:
+    output: true
+    permalink: /resources/:path/
+  resources_equipment:
+    output: true
+    permalink: /resources/:path/
+  resources_labware:
+    output: true
+    permalink: /resources/:path/
+  resources_software:
+    output: true
+    permalink: /resources/:path/
