@@ -5,25 +5,25 @@ icon: fa fa-home
 title: Geobiology & Geomicrobial Physiology at CU Boulder
 title_height: 100px
 image:
-  - file: /header_images/home/santa_paula_creek_oil_seep_lowres.jpg
+  - file: /images/header/home/santa_paula_creek_oil_seep_lowres.jpg
     title: Microbial communities<br/>near natural oil seeps
     location: Santa Paula Creek, California
-  - file: /header_images/home/yellowstone_lowres.jpg
+  - file: /images/header/home/yellowstone_lowres.jpg
     title: Carbonate terraces<br/>at Mammoth hot springs
     location: Yellowstone National Park, Wyoming
-  - file: /header_images/home/rmnp_methane_bubbles_lowres.jpg
+  - file: /images/header/home/rmnp_methane_bubbles_lowres.jpg
     title: Methane bubbles frozen in ice
     location: Rocky Mountain National Park, Colorado
-  - file: /header_images/home/mono_lake.jpg
+  - file: /images/header/home/mono_lake.jpg
     title: Alkaline Mono Lake
     location: Eastern Sierra Nevada, California
-  - file: /header_images/home/stromatolites.jpg
+  - file: /images/header/home/stromatolites.jpg
     title: Precambrian Chevron<br/>Stromatolites
     location: West Texas
-  - file: /header_images/home/iceland.jpg
+  - file: /images/header/home/iceland.jpg
     title: Phototrophs growing<br/>in glacial melt
     location: Laugavegur, Iceland
-  - file: /header_images/home/octopus_spring.jpg
+  - file: /images/header/home/octopus_spring.jpg
     title: Microbial structures at<br/>Octopus Spring
     location: Yellowstone National Park, Wyoming
 image_height: 300px
