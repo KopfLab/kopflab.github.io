@@ -8,7 +8,7 @@ term: Fall 2018
 time: 4-6pm
 location: Benson 1B81
 credits: 2
-picture: /teaching/pictures/comp_tools.png
+picture: /images/teaching/comp_tools.png
 ---
 
 No matter the discipline, scientific research and teaching in the 21st century relies heavily on computational tools. This class aims to introduce graduate students in the geological, geophysical and biogeochemical sciences to a wide range of commonly used concepts and data tools to empower them to find the right tool for their computational needs in research and teaching. For this purpose, the course will introduce the following topics to provide basic exposure and practice and go into more depth on those most relevant to the cohort.
