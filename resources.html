@@ -22,14 +22,14 @@ For details, please see the links below and the <a href="https://github.com/Kopf
 
 {% assign resources = site.resources_facilities | sort:"weight" | reverse  %}
 {% for resource in resources %}
-  {% include list_resource.html resource=resource %}
+  {% include list_item.html item=resource %}
 {% endfor %}
 
 <h2 id="labware">Labware</h2>
 
 {% assign resources = site.resources_labware | sort:"weight" | reverse  %}
 {% for resource in resources %}
-  {% include list_resource.html resource=resource %}
+  {% include list_item.html item=resource %}
 {% endfor %}
 
 <h2 id="software">Software</h2>
@@ -37,6 +37,6 @@ For details, please see the links below and the <a href="https://github.com/Kopf
 {% assign resources = site.resources_software | sort:"weight" | reverse  %}
 {% for resource in resources %}
   {% unless resource.hidden %}
-    {% include list_resource.html resource=resource %}
+    {% include list_item.html item=resource %}
   {% endunless %}
 {% endfor %}

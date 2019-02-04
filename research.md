@@ -19,17 +19,9 @@ category: research
 permalink: /research/
 ---
 
-<h3>Under construction, stay tuned for more details...</h3>
+## Active Research Projects
 
-<!--
-<div class="row">
-{% for post in site.categories.research reversed %}
-	<div class="col-xs-12 col-md-4">
-		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		<p>
-      {{ post.content }}
-    </p>
-	</div>
+{% assign projects = site.research | sort:"weight" %}
+{% for project in projects %}
+  {% include list_item.html item=project %}
 {% endfor %}
-</div>
--->
