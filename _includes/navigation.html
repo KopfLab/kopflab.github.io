@@ -1,11 +1,14 @@
 <!-- find previous and next page within items -->
-{% for item in include.items %}
+
+{% assign collection = site.collections | where: "label", page.collection | first %}
+{% assign items = collection.docs | sort:"weight" %}
+{% for item in items %}
   {% if item.url == page.url %}
     {% assign index0 = forloop.index0 %}
     {% assign index1 = forloop.index %}
   {% endif %}
 {% endfor %}
-{% for item in include.items %}
+{% for item in items %}
   {% if index0 == forloop.index %}
     {% assign next = item %}
   {% endif %}

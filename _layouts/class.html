@@ -16,8 +16,7 @@ layout: plain
   <h5><strong>Course #: </strong>{{ page.catalog }}</h5>
   {% endif %}
 
-  {% assign items = site.teaching | sort:"weight" %}
-  {% include navigation.html items = items %}
+  {% include navigation.html %}
 
 {% endcapture %}
 
