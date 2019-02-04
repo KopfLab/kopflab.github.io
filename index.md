@@ -39,7 +39,7 @@ The Geomicrobial Physiology lab at CU Boulder consists of a [diverse group of re
 
 ## Recent News
 
-{% for post in site.categories.news limit: site.front_page_news %}
+{% for post in site.posts limit: site.front_page_news %}
 <div class="news-item media">
   <div class="media-left">
     <div class="news-date">

@@ -1,7 +1,11 @@
 <!-- find previous and next page within items -->
 
 {% assign collection = site.collections | where: "label", page.collection | first %}
-{% assign items = collection.docs | sort:"weight" %}
+{% if include.posts %}
+  {% assign items = collection.docs %}
+{% else %}
+  {% assign items = collection.docs | sort:"weight" %}
+{% endif %}
 {% for item in items %}
   {% if item.url == page.url %}
     {% assign index0 = forloop.index0 %}

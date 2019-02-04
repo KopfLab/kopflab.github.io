@@ -8,10 +8,10 @@ layout: plain
   <h4>{{ page.subtitle }}</h4>
   {% endif %}
   <p>{{ page.date | date: "%-d %B %Y"}}</p>
-  {% include post_navigation.html %}
+  {% include navigation.html posts=true asc=true %}
 {% endcapture %}
 
-{% include title.html title = title %}
+{% include title.html title=title %}
 
 <div class="container">
   {{ content }}

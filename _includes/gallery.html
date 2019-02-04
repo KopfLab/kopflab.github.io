@@ -11,6 +11,8 @@
 {% endif %}
 {% for img in page.gallery %}
   <div class="gallery-image {{ class }}">
-    {% include image.html img=img.file caption=img.title width="100%" %}
+    {% include image.html img=img.file caption=img.title width="100%" class="" %}
   </div>
 {% endfor %}
+
+<!-- FIXME: the gallery is not working properly -->
