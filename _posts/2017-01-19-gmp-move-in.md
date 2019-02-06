@@ -28,4 +28,4 @@ After several months of [renovations](/news/gmp-lab-renovations-start/), the con
 
 #### The evolution of the new lab
 
-{% include gallery.html ncol='1' %}
+{% include gallery.html ncol="3" %}
