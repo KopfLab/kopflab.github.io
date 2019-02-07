@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: Nitrogen Cycle Dynamics
-weight: 0
+weight: 0.8
 launch: http://server.kopflab.com/shiny/apps/nitrogen_cycle_dynamics/
 picture: /images/resources/overview/n_cylce_dynamics.png
 github: sebkopf/shinyApps/tree/master/nitrogen_cycle_dynamics

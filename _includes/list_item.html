@@ -29,12 +29,12 @@
   <div class="media-body">
     {% if item.summary %}
       {{ item.summary }}
-    {% elsif include.full_text %}
+    {% elsif item.full_text or include.full_text %}
       {{ item.content }}
       {% assign length = 0 %}
     {% else %}
-      {{ item.content | strip_html | truncatewords: 60 }}
       {% assign length = item.content | number_of_words %}
+      {{ item.content | strip_html | truncatewords: 60 }}
     {% endif %}
     {% if item.summary or length > 60 %}
     <a href="{{ url }}"><strong>read more</strong></a>

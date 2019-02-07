@@ -19,7 +19,7 @@ url: "https://kopflab.org"
 urlencode: "https%3A%2F%2Fkopflab.org"
 icon: "/images/header/cubes_sil.png"
 permalink: /:categories/:title/
-front_page_news: 4
+front_page_news: 5
 
 # Build settings
 markdown: kramdown
