@@ -8,5 +8,3 @@ The Isotope Geomicrobiology Group comprises the Kopf and Wing labs located in th
 We regularly combine aspects of aerobic and anaerobic laboratory culture, continuous culture, molecular biology, fluorescence microscopy, aqueous chemistry, isotopic analysis, and experimental design (3D-printing, microcontroller & circuit setup),
 and are looking for a highly motivated individual with excellent technical, communicational and organizational skills who is looking to apply and expand their existing skillset in a friendly and highly collaborate research environment.
 For additional details and the CU Boulder application portal, please consult the official job posting.
-
-Update: This position has been filled, we are excited to welcome [Jody Donnelly](/people/jody) to the lab. Thanks to everyone who applied for the great interest in this position.
