@@ -30,7 +30,7 @@ $navbar-inverse-link-active-bg:             $navbar-inverse-bg;
 
 /***** Custom settings ******/
 $logo-bgrd-color: $navbar-inverse-bg; //rgb(30, 30, 30);
-$logo-url: "/header_images/cub_kopf_lab_w.png";
+$logo-url: "/images/header/cub_kopf_lab_w.png";
 $logo-height: 70px;
 $navbar-bgrd-color: $navbar-inverse-bg;
 $navbar-border-bottom: 1px solid rgb(255, 255, 255);
@@ -491,6 +491,7 @@ $hover-info-transition: 0.5s ease opacity;
 
 $people-image-width: 292px;
 $people-image-height: 219px;
+$people-label-height: 80px;
 $people-image-margin-bottom: 23px;
 .people-grid {
 
@@ -512,16 +513,41 @@ $people-image-margin-bottom: 23px;
       @extend .hover-info; // not necessary but useful here
       float: left;
       width: $people-image-width;
-      height: $people-image-height;
+      height: $people-image-height + $people-label-height + 3;
       padding: 0px;
+      margin: 0px;
       margin-bottom: $people-image-margin-bottom; // the side-margin is 'gutter' in the page.grid
+      border: 2px solid #555;
     }
 
     .grid-image {
       img {
         width: 100%;
-        height: auto;
-        border: 2px solid #555;
+        height: $people-image-height;
+        vertical-align: top;
+        //border: 2px solid #555;
+      }
+    }
+
+    .grid-label {
+      width: 100%;
+      background-color: $body-link-color;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      display: table;
+      height: $people-label-height;
+      overflow: hidden;
+
+      a {
+        color: rgb(255, 255, 255);
+        &:active, &:focus, &:hover {
+          color: rgb(255, 255, 255);
+          actext-decoration: none;
+        }
+      }
+      h1, h2, h3, h4, p {
+        margin: 0px;
+        padding: 0px;
       }
     }
   }

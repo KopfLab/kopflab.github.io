@@ -17,9 +17,9 @@ description: >
   Geomicrobial Physiology Lab at the University of Colorado in Boulder
 url: "https://kopflab.org"
 urlencode: "https%3A%2F%2Fkopflab.org"
-icon: "/header_images/cubes_sil.png"
+icon: "/images/header/cubes_sil.png"
 permalink: /:categories/:title/
-front_page_news: 4
+front_page_news: 5
 
 # Build settings
 markdown: kramdown
@@ -34,3 +34,27 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
+  research:
+    output: true
+    permalink: /:collection/:path/
+  people_team:
+    output: true
+    permalink: /people/:path/
+  people_collaborators:
+    output: true
+    permalink: /people/:path/
+  people_alumni:
+    output: true
+    permalink: /people/:path/
+  resources_facilities:
+    output: true
+    permalink: /resources/:path/
+  resources_equipment:
+    output: true
+    permalink: /resources/:path/
+  resources_labware:
+    output: true
+    permalink: /resources/:path/
+  resources_software:
+    output: true
+    permalink: /resources/:path/

@@ -1,0 +1,11 @@
+{% assign item = include.item %}
+{% for col in site.collections %}
+  {% if col.label == item.link_collection %}
+    {% for doc in col.docs %}
+      {% assign link_page = doc.path | split: '/' | last | replace:'.md','' | replace:'.html','' %}
+      {% if link_page == item.link_page %}
+        {% include list_item.html item=doc title=item.title %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}

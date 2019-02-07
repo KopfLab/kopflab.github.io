@@ -1,0 +1,60 @@
+{% assign item = include.item %}
+{% if include.title %}
+  {% assign title = include.title %}
+{% else %}
+  {% assign title = item.title %}
+{% endif %}
+
+{% if item.link_external %}
+  {% assign url = item.link_external %}
+{% else %}
+  {% assign url = item.url %}
+{% endif %}
+<div class="media">
+  <h3 class="media-heading">
+    <a href="{{ url }}">{{ title }}</a>
+    {% if item.github %}
+    <a href="http://www.github.com/{{ item.github }}/" target = "_new" data-toggle="tooltip"
+        data-delay='{"show": 100, "hide": 100 }' data-placement="bottom" title="Show on GitHub">
+      <span class="fa fa-github"></span>
+    </a>
+    {% endif %}
+    {% if item.launch %}
+    <a href="{{ item.launch }}" target = "_new" data-toggle="tooltip"
+        data-delay='{"show": 100, "hide": 100 }' data-placement="bottom" title="Launch application">
+      <span class="fa fa-rocket"></span>
+    </a>
+    {% endif %}
+  </h3>
+  <div class="media-body">
+    {% if item.summary %}
+      {{ item.summary }}
+    {% elsif item.full_text or include.full_text %}
+      {{ item.content }}
+      {% assign length = 0 %}
+    {% else %}
+      {% assign length = item.content | number_of_words %}
+      {{ item.content | strip_html | truncatewords: 60 }}
+    {% endif %}
+    {% if item.summary or length > 60 %}
+    <a href="{{ url }}"><strong>read more</strong></a>
+    {% endif %}
+  </div>
+  {% if include.full_text %}
+    {% assign include_picture = false %}
+  {% else %}
+    {% assign include_picture = true %}
+  {% endif %}
+
+  {% if include_picture and item.picture_html %}
+    <span class="media-right">{{ item.picture_html }}</span>
+  {% elsif include_picture and item.picture %}
+    <span class="media-right">
+      {% if item.caption %}
+      {% include image.html img=item.picture width="200px" caption=item.caption %}
+      {% else %}
+      {% include image.html img=item.picture width="200px" caption=item.title %}
+      {% endif %}
+    </span>
+  {% endif %}
+</div>

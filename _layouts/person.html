@@ -36,7 +36,10 @@ layout: plain
     {% endif %}
   </p>
 
-  {% include post_navigation.html asc = true %}
+  {% unless page.url == '/people/you/' %}
+  {% include navigation.html %}
+  {% endunless %}
+
 {% endcapture %}
 
 {% include title.html title = title %}

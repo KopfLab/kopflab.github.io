@@ -1,0 +1,73 @@
+---
+layout: default
+menu: People
+icon: fa fa-users
+title: The Team
+title_height: 70px
+image:
+  - file: /images/header/people/starfish.jpg
+image_height: 200px
+category: people
+permalink: /people/
+filters:
+  - label: Faculty
+    id: faculty
+  - label: Postdocs
+    id: postdoc
+  - label: Grad Students
+    id: grad
+  - label: Undergraduates
+    id: undergrad
+  - label: Staff
+    id: staff
+grid: |
+  masonry: {
+    columnWidth: 292, // also needs changing in style.scss $people-image-width
+    gutter: 20,
+    isFitWidth: true
+  }
+weight: 1
+---
+
+<br />
+
+<div class="people-grid">
+
+	<!-- Filters -->
+	<div class="filters">
+		<div id="filters" class="btn-group" data-toggle="buttons">
+				<label class="btn btn-primary active" data-filter="*"><input type="radio" checked> All</label>
+				{% for filter in page.filters %}
+				<label class="btn btn-primary" data-filter=".{{ filter.id }}"><input type="radio">{{ filter.label }}</label>
+				{% endfor %}
+		</div>
+	</div>
+
+  <h3>Geomicrobial Physiology Lab</h3>
+
+	<div class="grid">
+    {% assign people = site.people_team | sort:"weight"  %}
+		{% for person in people %}
+		  {% include grid_person.html person=person %}
+		{% endfor %}
+	</div>
+
+  <h3>Joint Geobiology Labs (Faculty & Researchers)</h3>
+
+  <div class="grid">
+    {% assign people = site.people_collaborators | sort:"weight"  %}
+		{% for person in people %}
+      {% include grid_person.html person=person %}
+    {% endfor %}
+  </div>
+
+  <h3>Alumni</h3>
+
+  <div class="grid">
+    {% assign people = site.people_alumni | sort:"weight"  %}
+		{% for person in people %}
+      {% include grid_person.html person=person %}
+    {% endfor %}
+  </div>
+
+</div>

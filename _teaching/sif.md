@@ -7,7 +7,7 @@ subtitle: in biogeochemical processes
 term: Fall 2019
 time: TBD
 location: TBD
-picture: /teaching/pictures/sif_flyer.jpg
+picture: /images/teaching/sif_flyer.jpg
 ---
 
 Where do isotope effects in biogeochemical transformations come from? How are they expressed and preserved in the environment? What can (and can’t) they tell us about the processes, environments and organisms producing them? This graduate-level course will investigate the origins of stable isotope fractionation in geochemical systems with special emphasis on the role of biological catalysts as key drivers of isotopic effects during biogeochemical transformations.  The class will cover a wide range of topics relevant to isotope fractionation including partition functions, diffusional, enzymatic and equilibrium isotope effects, open and closed system behavior, Rayleigh distillation, reservoir effects, enzymatic catalysis, physiological drivers and signal preservation.

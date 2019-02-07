@@ -1,0 +1,38 @@
+{% assign person = include.person %}
+{% if person.website %}
+  {% assign web_url = person.website %}
+{% else %}
+  {% assign web_url = person.url %}
+{% endif %}
+
+<div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
+  <!--
+  <div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
+    <div class="info">
+      <a href="{{ web_url }}">
+        <h4>{{ person.title }}</h4>
+        <p>{{ person.position }}</p>
+      </a>
+    </div>
+  </div></div></div>
+  -->
+
+  <a href="{{ web_url }}" class="background">
+    <div class="grid-image">
+      {% assign thumb = person.path | split: '/' | last | replace:'.md','.jpg' | prepend:'/images/people/grid/' %}
+      {% capture thumb_exists %}{% include file_exists.html file = thumb %}{% endcapture %}
+      {% assign thumb_exists = thumb_exists | strip_newlines %}
+      {% if thumb_exists == 'yes' %}<img src="{{ thumb }}"/>
+      {% else %}<br /><center>{{ person.title }}</center>
+      {% endif %}
+    </div>
+    <div class="grid-label">
+      <div style="display: table-cell; vertical-align: middle;">
+        <div>
+          <h4>{{ person.title }}</h4>
+          <p>{{ person.position }}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

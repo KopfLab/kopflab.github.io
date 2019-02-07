@@ -15,6 +15,9 @@ layout: plain
   {% if page.catalog %}
   <h5><strong>Course #: </strong>{{ page.catalog }}</h5>
   {% endif %}
+
+  {% include navigation.html %}
+
 {% endcapture %}
 
 {% include title.html title = title %}

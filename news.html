@@ -1,0 +1,33 @@
+---
+layout: default
+menu: News
+icon: glyphicon glyphicon-globe
+title: News
+title_height: 80px
+image_height: 80px
+align: left
+weight: 6
+category: news
+permalink: /news/
+---
+
+{% for post in site.posts %}
+<div class="news-item media">
+
+  <div class="media-left">
+    <div class="news-date">
+      <div class="day">{{ post.date | date: "%-d"}}</div>
+      <div class="month">{{ post.date | date: "%B"}}</div>
+      <div class="year">{{ post.date | date: "%Y"}}</div>
+    </div>
+  </div>
+
+  <div class="media-body">
+    {% if post.link_collection %}
+      {% include page_link_list_item.html item=post %}
+    {% else %}
+      {% include list_item.html item=post full_text=true %}
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
