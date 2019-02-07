@@ -4,6 +4,26 @@ layout: plain
 
 {% capture title %}
   <h2>{{ page.title }}</h2>
+
+  {% if page.link_collection %}
+    {% for col in site.collections %}
+      {% if col.label == page.link_collection %}
+        {% for doc in col.docs %}
+          {% assign link_page = doc.path | split: '/' | last | replace:'.md','' | replace:'.html','' %}
+          {% if link_page == page.link_page %}
+            <a href="{{ doc.url }}">
+            <h3><span class="fa fa-link"></span> link to internal page</h3>
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% elsif page.link_external %}
+    <a href="{{ page.link_external }}">
+    <h3><span class="fa fa-link"></span> link to external page</h3>
+    </a>
+  {% endif %}
+
   {% if page.subtitle %}
   <h4>{{ page.subtitle }}</h4>
   {% endif %}
@@ -14,5 +34,7 @@ layout: plain
 {% include title.html title=title %}
 
 <div class="container">
+
   {{ content }}
+
 </div>

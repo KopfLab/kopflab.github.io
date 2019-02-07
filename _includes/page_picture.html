@@ -1,0 +1,17 @@
+{% if include.width %}
+  {% assign img_width = include.width %}
+{% elsif include.pull_right %}
+  {% assign img_width = "250px" %}
+{% else %}
+  {% assign img_width = "100%" %}
+{% endif %}
+
+{% if include.pull_right %}
+  <div class="pull-right gap-left">
+  {% include image.html img=page.picture width=img_width caption=page.caption %}
+  </div>
+{% else %}
+  <center>
+  {% include image.html img=page.picture width=img_width caption=page.caption %}
+  </center>
+{% endif %}

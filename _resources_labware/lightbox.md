@@ -6,11 +6,10 @@ subtitle: >
   a low-cost submersible light chamber for the in situ<br/>
   enrichment of phototrophic microorganisms
 picture: /images/resources/lightbox/lb_green_red_ready.jpg
+caption: Lightbox with red and green light sources right after laboratory water test and ready for environmental deployment.
 ---
 
-<div class="pull-right gap-left">
- {% include image.html img=page.picture width="250" caption="Lightbox with red and green light sources right after laboratory water test and ready for environmental deployment." %}
-</div>
+{% include page_picture.html pull_right=true %}
 
 The MBL lightbox is a reusable, submersible, battery-powered narrow-spectrum LED illumination chamber with a 3D printed, environmentally exposed microscope slide holder that was designed as a low-cost solution for wave-length specific in situ enrichment of phototrophic microorganisms. The method selectively enriches for microorganisms that thrive under the provided light regime(s) but within the natural chemical environment of their native habitat. It was developed by [Sebastian Kopf](mailto:sebastian.kopf@colorado.edu) and [Sean Kearney](mailto:skearney@mit.edu) at the 2015 MBL Microbial Diversity summer course.
 

@@ -32,12 +32,12 @@ weight: 0
 category: home
 ---
 
-## About the Lab
+<h2> About the Lab </h2>
 
-The Geomicrobial Physiology lab at CU Boulder consists of a [diverse group of researchers](/people) from the geological, environmental and microbiological sciences focused on discovering how microorganisms grow in their natural habitats, how they respond to environmental change, and how they produce various types of molecular and isotopic biomarkers - traces of life that are preserved in the environment for millions and sometimes billions of years. The combination of these three lines of scientific inquiry enables us to better reconstruct past environments and helps us predict how microbial life will respond to future change. We also do a fair bit of tools development for geochemical data processing and experimental design in microbiology and strive to make all of our lab designs and software open-source and easily available to advance the pace of discovery. Check out our [research](/research), [publications](/publications), [resources](/resources), and [opportunities](/people/you) for more information.
+The Geomicrobial Physiology lab at CU Boulder consists of a <a href="/people">diverse group of researchers</a> from the geological, environmental and microbiological sciences focused on discovering how microorganisms grow in their natural habitats, how they respond to environmental change, and how they produce various types of molecular and isotopic biomarkers - traces of life that are preserved in the environment for millions and sometimes billions of years. The combination of these three lines of scientific inquiry enables us to better reconstruct past environments and helps us predict how microbial life will respond to future change. We also do a fair bit of tools development for geochemical data processing and experimental design in microbiology and strive to make all of our lab designs and software open-source and easily available to advance the pace of discovery. Check out our <a href="/research">research</a>, <a href="/publications">publications</a>, <a href="/resources">resources</a>, and <a href="/people/you">opportunities</a> for more information.
 
 
-## Recent News
+<h2> Recent News </h2>
 
 {% for post in site.posts limit: site.front_page_news %}
 <div class="news-item media">
@@ -50,12 +50,11 @@ The Geomicrobial Physiology lab at CU Boulder consists of a [diverse group of re
   </div>
 
   <div class="media-body">
-    <h3 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    {{ post.content | strip_html | truncatewords: 50 }}
-    {% assign post_length = post.content | number_of_words %}
-    {% if post_length > 50 %}
-    <a href="{{ post.url }}"><strong>read more</strong></a>
-    {% endif %}
+  {% if post.link_collection %}
+    {% include page_link_list_item.html item=post %}
+  {% else %}
+    {% include list_item.html item=post %}
+  {% endif %}
   </div>
 </div>
 {% endfor %}

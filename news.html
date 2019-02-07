@@ -23,8 +23,11 @@ permalink: /news/
   </div>
 
   <div class="media-body">
-    <h3 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    {{ post.content }}
+    {% if post.link_collection %}
+      {% include page_link_list_item.html item=post %}
+    {% else %}
+      {% include list_item.html item=post full_text=true %}
+    {% endif %}
   </div>
 </div>
 {% endfor %}
