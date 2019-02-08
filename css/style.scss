@@ -512,17 +512,18 @@ $people-image-margin-bottom: 23px;
     .grid-item {
       @extend .hover-info; // not necessary but useful here
       float: left;
-      width: $people-image-width;
-      height: $people-image-height + $people-label-height + 3;
+      width: $people-image-width + 4;
+      height: $people-image-height + $people-label-height + 4;
       padding: 0px;
       margin: 0px;
       margin-bottom: $people-image-margin-bottom; // the side-margin is 'gutter' in the page.grid
+      background-color: #555;
       border: 2px solid #555;
     }
 
     .grid-image {
       img {
-        width: 100%;
+        width: $people-image-width;
         height: $people-image-height;
         vertical-align: top;
         //border: 2px solid #555;
@@ -530,7 +531,7 @@ $people-image-margin-bottom: 23px;
     }
 
     .grid-label {
-      width: 100%;
+      width: $people-image-width;
       background-color: $body-link-color;
       color: rgb(255, 255, 255);
       text-align: center;
