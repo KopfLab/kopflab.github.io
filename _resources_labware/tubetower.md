@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: Balch Tube Tower
-weight: 2
+weight: 3
 subtitle: >
   luxury apartments for anaerobic microbes
 picture: /images/resources/tube_tower.jpg
