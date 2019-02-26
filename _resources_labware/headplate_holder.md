@@ -15,6 +15,6 @@ stl:
 
 {% include page_picture.html pull_right=true %}
 
-The Headplate Holder makes upright assembly of chemostat head plates easy without the risk of damaging head plate attachments or needing to work on the glass vessel itself. The holders can be stacked for headplates with attachments that are too long for a single holder (see example on the right).
+The headplate holder makes upright assembly of chemostat head plates easy without the risk of damaging head plate attachments or needing to work on the glass vessel itself. The holders can be stacked for headplates with attachments that are too long for a single holder (see example on the right).
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/>
