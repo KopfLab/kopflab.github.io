@@ -2,7 +2,7 @@
 layout: resource
 title: isotope labeling calculator
 weight: 2
-launch: http://server.kopflab.com/shiny/apps/isolabel/
+launch: https://kopflab.shinyapps.io/isolabel/
 picture: /images/resources/overview/isolabel.png
 github: sebkopf/shinyApps/tree/master/isolabel
 ---
