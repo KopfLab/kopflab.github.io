@@ -1,13 +1,13 @@
 ---
 layout: person
-title: Ciara Asamoto
-weight: 10
+title: Toby Halamka
+weight: 11
 position: Graduate Student
 group: grad
-email: Ciara.Asamoto@Colorado.EDU
+email: toby.halamka@colorado.edu
 phone:
 address:
-picture: /images/people/ciara.jpg
+picture: /images/people/toby.jpg
 caption:
 ---
 
