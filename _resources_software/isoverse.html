@@ -3,8 +3,9 @@ layout: resource
 title: isoverse / isoreader / isoprocessor / isoviewer
 weight: 5
 title_html: >
-  <br/><a href="http://www.isoverse.org"><img src="/images/resources/isoverse/isoverse_logo.png" align="center" height="277"/></a>
-  <h3>open-source data tools for stable isotopes</h3>
+  <br/><a href="https://www.isoverse.org"><img src="/images/resources/isoverse/isoverse_logo.png" align="center" height="277"/></a>
+  <h3><a href="https://www.isoverse.org">www.isoverse.org</a></h3>
+  <h4>open-source data tools for stable isotopes</h4>
 picture_html: >
   <img src="/images/resources/isoverse/isoverse_logo.png" width="200px"/>
 summary: >
@@ -13,92 +14,3 @@ summary: >
 permalink: /isoverse/
 github: isoverse
 ---
-
-<div class="media">
-  <div class="media-heading">
-    <h3>
-      <a href="http://www.isoverse.org">isoverse</a>
-      <a href="http://github.com/isoverse/isoverse"><i class="fa fa-github"></i></a>
-    </h3>
-  </div>
-  <div class="media-body">
-      Isoverse is a suite of platform-independent (Windows, Mac, Linux), open-source data tools for the efficient and reproducible processing of stable isotope data. Although written primarily in R, it can be used in both RMarkdown as well as Jupyter data processing notebooks. Due to the design based on the popular tidyverse style of R programming, all isoverse packages are easily extendable and work great with tidyverse packages such as tidyr, dplyr and ggplot.
-  </div>
-  <div class="media-right">
-    <a href="http://www.isoverse.org"><img src="/images/resources/isoverse/isoverse_logo_thumb.png" align="center" height="138.5"/></a>
-  </div>
-</div>
-
-<div class="media">
-  <div class="media-heading">
-    <h3>
-      <a href="http://isoreader.isoverse.org">isoreader</a>
-      <a href="http://github.com/isoverse/isoreader"><i class="fa fa-github"></i></a>
-    </h3>
-  </div>
-  <div class="media-body">
-    <p>
-      This package is intended as a unified one-stop command line interface to all common IRMS (isotope ratio mass spectrometry) file formats used in stable isotope geochemistry. It enables the reading and processing of stable isotope data directly from the data files and thus provides a foundational tool for platform-independent, efficient and reproducible data reduction. Although implemented in R, it provides easy export to Python using the shared R/Python feather file format. Due to the implementation following the example of tidyverse's readr, isoreader takes care of error catching to avoid pipeline breaks because of problems encountered in source data files. At present, it can read most Thermo dual inlet (.did, .caf) and continuous flow (.dxf, .cf) data files as well as Elementar continuous flow data archives (.iarc) and Nu dual inlet files (.txt) with additional extensions for other file formats in the works.
-    </p>
-
-    <p>
-      <span class="fa fa-comment"></span>: Please provide comments/suggestions and file bug reports or feature requests on <a href="http://github.com/isoverse/isoreader/issues">GitHub</a>
-    </p>
-
-    <p>
-      <span class="fa fa-rocket"></span>: Explore all functionality and vignettes of the <strong>isoreader</strong> package interactively on <a href="https://mybinder.org/">binder</a>:
-      <a href="https://mybinder.org/v2/gh/isoverse/isoreader/binder?urlpath=rstudio"><img src="https://img.shields.io/badge/launch-RStudio-blue.svg"/></a>
-      <a href="https://mybinder.org/v2/gh/isoverse/isoreader/binder?urlpath=lab"><img src="https://img.shields.io/badge/launch-Jupyter-orange.svg"/></a>
-    </p>
-  </div>
-  <div class="media-right">
-    <a href="http://isoreader.isoverse.org"><img src="/images/resources/isoverse/isoreader_logo_thumb.png" align="center" height="138.5"/></a>
-  </div>
-</div>
-
-<div class="media">
-  <div class="media-heading">
-    <h3>
-      <a href="http://isoprocessor.isoverse.org">isoprocessor</a>
-      <a href="http://github.com/isoverse/isoprocessor"><i class="fa fa-github"></i></a>
-    </h3>
-  </div>
-  <div class="media-body">
-    <p>This package provides broad functionality for IRMS data processing and reduction pipelines including signal conversion (voltage to current and back), time scaling (continuous flow chromatograms), isotope ratio calculations, delta value calculations, as well as easy-to-use highly flexible data calibration and visualization pipelines for continuous flow data. Additional tools on O17 corrections, H3 factor calculation, peak detection, baseline correction, etc are in the works.</p>
-
-    <p>
-      <span class="fa fa-comment"></span>: Please provide comments/suggestions and file bug reports or feature requests on <a href="http://github.com/isoverse/isoprocessor/issues">GitHub</a>
-    </p>
-
-    <p>
-      <span class="fa fa-rocket"></span>: Explore all functionality and vignettes of the <strong>isoprocessor</strong> package interactively on <a href="https://mybinder.org/">binder</a>:
-      <a href="https://mybinder.org/v2/gh/isoverse/isoprocessor/binder?urlpath=rstudio"><img src="https://img.shields.io/badge/launch-RStudio-blue.svg"/></a>
-      <a href="https://mybinder.org/v2/gh/isoverse/isoprocessor/binder?urlpath=lab"><img src="https://img.shields.io/badge/launch-Jupyter-orange.svg"/></a>
-    </p>
-  </div>
-  <div class="media-right">
-    <a href="http://isoprocessor.isoverse.org"><img src="/images/resources/isoverse/isoprocessor_logo_thumb.png" align="center" height="150"/></a>
-  </div>
-</div>
-
-<div class="media">
-  <div class="media-heading">
-    <h3>
-      <a href="http://isoviewer.isoverse.org">isoviewer</a>
-      <a href="http://github.com/isoverse/isoviewer"><i class="fa fa-github"></i></a>
-    </h3>
-  </div>
-  <div class="media-body">
-
-    <p>The isoviewer graphical user interface (GUI) provided by this package is based on the functionlity implemented by the isoreader and isoprocessor packages. The purpose of the GUI is two fold. First and foremost, it is a learning tool to illustrate how to build literate RMarkdown data processing files for IRMS data using the underlying packages as a unified interface for reading, converting and quickly visualizing various raw IRMS data file formats. The second purpose is to provide an example for a web-based IRMS data repository that is easy to run on any computer/server completely platform-independent and open-source. Towards this goal, the isoviewer package provides some rudimentary GUI modules that can be used in other more customized applications.</p>
-
-    <p>
-      <span class="fa fa-comment"></span>: Please provide comments/suggestions and file bug reports or feature requests on <a href="http://github.com/isoverse/isoviewer/issues">GitHub</a>
-    </p>
-
-    <p><span class="fa fa-rocket"></span>: An online demo of the isoviewer GUI is <a href="/isoviewer_demo">available on our server</a> but has limited computational resources (i.e. could be slow).</p>
-  </div>
-  <div class="media-right">
-    <a href="http://isoviewer.isoverse.org"><img src="/images/resources/isoverse/isoviewer_logo_thumb.png" align="center" height="150"/></a>
-  </div>
-</div>
