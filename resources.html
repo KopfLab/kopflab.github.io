@@ -3,7 +3,7 @@ layout: default
 menu: Resources
 icon: glyphicon glyphicon-cog
 title: Resources
-subtitle: <a href="#facilities">Facilities</a> | <!--<a href="#equipment">Equipment</a> |--> <a href="#labware">Labware</a> | <a href="#software">Software</a>
+subtitle: <a href="#facilities">Facilities</a> | <!--<a href="#equipment">Equipment</a> |--> <a href="#labware">Labware</a> | <a href="#software">Software</a>  | <a href="#protocols">Protocols</a>
 title_height: 110px
 image:
   - file: /images/header/resources/building_blocks.jpg
@@ -35,6 +35,15 @@ For details, please see the links below and the <a href="https://github.com/Kopf
 <h2 id="software">Software</h2>
 
 {% assign resources = site.resources_software | sort:"weight" | reverse  %}
+{% for resource in resources %}
+  {% unless resource.hidden %}
+    {% include list_item.html item=resource %}
+  {% endunless %}
+{% endfor %}
+
+<h2 id="protocols">Protocols</h2>
+
+{% assign resources = site.resources_protocols | sort:"weight" | reverse  %}
 {% for resource in resources %}
   {% unless resource.hidden %}
     {% include list_item.html item=resource %}
