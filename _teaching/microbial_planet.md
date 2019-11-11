@@ -4,8 +4,8 @@ title: Our Microbial Planet
 weight: 1
 level: "all levels (general interest science class)"
 catalog: GEOL 1180
-term: Fall 2018
-time: MWF 12-12:50pm
+term: Spring 2020
+time: MWF 1-1:50pm
 location: BESC 1B75
 credits: 3
 prerequisites: No prerequisites
