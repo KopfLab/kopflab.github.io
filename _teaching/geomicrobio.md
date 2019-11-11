@@ -1,12 +1,12 @@
 ---
 layout: class
 title: Geomicrobiology
-level: "upper level undergraduates"
+level: "upper level undergraduate and graduate students"
 weight: 2
-catalog: GEOL 4700-001 / GEOL-5700-010
+catalog: GEOL/MCDB/ENVS 4185 / GEOL 5185
 term: Fall 2019
-time: TBD
-location: BESC 1B75
+time: Tu / Th 9:30-10:45
+location: BESC 1B81
 credits: 3
 prerequisites: CHEM 113/1114 or CHEM 1251/1271
 picture: /images/teaching/geomicrobio_flyer.jpg

@@ -1,10 +1,11 @@
 ---
 layout: class
 title: Stable Isotope Fractionation
-level: "upper level undergraduates and graduate students"
+level: "upper level undergraduate and graduate students"
+catalog: GEOL 5235
 weight: 3
 subtitle: in biogeochemical processes
-term: Fall 2019
+term: Fall 2020
 time: TBD
 location: TBD
 picture: /images/teaching/sif_flyer.jpg
