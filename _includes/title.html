@@ -24,6 +24,7 @@
     </div>
 
     <!-- Title -->
+    {% if page.title or page.title_html %}
     <div class="slideshow-title" {% if page.image_height %} style="height: {{page.title_height}};" {% endif %}>
       <table>
         <tr><td
@@ -36,6 +37,7 @@
         </td></tr>
       </table>
     </div>
+    {% endif %}
 
     {% if page.image.size > 1 %}
     <!-- Left and right controls -->
