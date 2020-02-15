@@ -62,3 +62,6 @@ collections:
   resources_protocols:
     output: true
     permalink: /resources/:path/
+  resources_internal:
+    output: true
+    permalink: /:path/

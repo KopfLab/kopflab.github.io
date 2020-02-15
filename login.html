@@ -1,0 +1,13 @@
+---
+layout: default
+menu: Login
+icon: fa fa-key
+weight: 7
+title: Internal Resources
+category: login
+permalink: /login/
+---
+
+{% for resource in site.resources_internal %}
+  {% include list_item.html item=resource %}
+{% endfor %}
