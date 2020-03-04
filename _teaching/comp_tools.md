@@ -3,10 +3,10 @@ layout: class
 title: Computational Tools
 level: "graduate students"
 weight: 4
-catalog: GEOL 5500
+catalog: GEOL 5042
 term: Fall 2020
-time: 4-6pm
-location: Benson 1B81
+time: Tu 2-3:15pm, Th 12:30-1:45pm
+location: BESC 455
 credits: 2
 picture: /images/teaching/comp_tools.png
 ---
