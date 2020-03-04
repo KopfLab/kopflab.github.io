@@ -6,8 +6,8 @@ catalog: GEOL 5253
 weight: 3
 subtitle: in biogeochemical processes
 term: Fall 2020
-time: TBD
-location: TBD
+time: Tu/Th 9:30-10:45am
+location: BESC355
 picture: /images/teaching/sif_flyer.jpg
 ---
 
