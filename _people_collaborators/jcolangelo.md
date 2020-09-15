@@ -1,8 +1,8 @@
 ---
 layout: person
 title: Jesse Colangelo
-weight: 11
-position: C-DEBI postdoctoral fellow
+weight: 12
+position: Postdoctoral Fellow
 group: postdoc
 collaborator: yes
 email: jesse.colangelo@colorado.edu

@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Emma Bertran
-weight: 12
+weight: 13
 position: Postdoctoral Scholar
 group: postdoc
 collaborator: yes
