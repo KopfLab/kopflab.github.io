@@ -1,6 +1,6 @@
 ---
 layout: person
-title: Sebastian Kopf
+title: Sebastian Kopf (he/him)
 weight: 1
 position: Geomicrobial Physiology Lab Principal Investigator
 group: faculty
