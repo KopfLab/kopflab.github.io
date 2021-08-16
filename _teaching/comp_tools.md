@@ -7,7 +7,7 @@ catalog: GEOL 5042
 term: Fall 2020
 time: Tu 2-3:15pm, Th 12:30-1:45pm
 location: BESC 455
-credits: 2
+credits: 3
 picture: /images/teaching/comp_tools.png
 ---
 
