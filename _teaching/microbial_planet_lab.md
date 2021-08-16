@@ -3,8 +3,8 @@ layout: class
 title: Microbial Planet Laboratory
 weight: 1
 level: "all levels (general interest research class)"
-catalog: GEOL 1180
-term: Spring 2020
+catalog: GEOL 3181
+term: Fall 2022
 time: Tu / Th 1-3:50pm
 location: BESC 355
 credits: 3
