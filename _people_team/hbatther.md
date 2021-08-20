@@ -13,4 +13,8 @@ caption:
 
 ## Bio
 
+- **2020-Current** - Graduate Student, CU Boulder
+- **2018-2020** - M.S., CSU Chico
+- **2012-2016** - B.S., UC Berkeley
+
 ## About
