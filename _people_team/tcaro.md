@@ -7,6 +7,7 @@ group: grad
 email: tristan.caro@colorado.edu
 website: https://www.colorado.edu/certificate/iqbiology/tristan-caro
 phone:
+github: tacaro
 address:
 picture: /images/people/tristan.jpg
 caption:
