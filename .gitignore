@@ -13,3 +13,6 @@ _ignore
 *\.*\.jpg
 *\.*\.png
 _*\.jpg
+
+# exclude todo lists
+*TODO*
