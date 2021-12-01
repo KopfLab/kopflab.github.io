@@ -26,10 +26,12 @@ layout: plain
   {{ content }}
 
   {% if page.picture %}
+  {% unless page.hide_picture %}
   <br/>
   <center>
     {% include image.html img=page.picture class="" width="80%" %}
   </center>
+  {% endunless %}
   {% endif %}
 
 </div>
