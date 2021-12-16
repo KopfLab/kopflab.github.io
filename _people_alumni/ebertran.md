@@ -1,12 +1,12 @@
 ---
 layout: person
 title: Emma Bertran
-weight: 13
-position: Postdoctoral Scholar
+weight: 18
+position: Postdoctoral Scholar, Princeton University
 group: postdoc
 collaborator: yes
-email: emmabertran@fas.harvard.edu
 picture: /images/people/emma_bertran.png
+website: https://twitter.com/emma_bertran
 caption:
 ---
 

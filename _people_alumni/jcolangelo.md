@@ -1,11 +1,11 @@
 ---
 layout: person
 title: Jesse Colangelo
-weight: 12
+weight: 17
 position: Postdoctoral Fellow
 group: postdoc
 collaborator: yes
-email: jesse.colangelo@colorado.edu
+website: https://www.linkedin.com/in/jesse-colangelo
 picture:
 caption:
 ---
