@@ -2,7 +2,7 @@
 layout: person
 title: Tali & Mia
 weight: 100
-position: Field Assistants
+position: Lab Field Assistants
 group: other
 collaborator:
 email:
