@@ -6,17 +6,6 @@
 {% endif %}
 
 <div class="grid-item {{ person.group }}" alt="{{ person.title }}" title="{{ person.title }}">
-  <!--
-  <div class="center-wrap-1"><div class="center-wrap-2"><div class="center-wrap-3">
-    <div class="info">
-      <a href="{{ web_url }}">
-        <h4>{{ person.title }}</h4>
-        <p>{{ person.position }}</p>
-      </a>
-    </div>
-  </div></div></div>
-  -->
-
   <a href="{{ web_url }}" class="background">
     <div class="grid-image">
       {% assign thumb = person.path | split: '/' | last | replace:'.md','.jpg' | prepend:'/images/people/grid/' %}

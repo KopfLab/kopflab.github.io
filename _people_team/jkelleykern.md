@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Julia Kelley-Kern
-weight: 16
+weight: 17
 position: Undergraduate Research Assistant
 group: undergrad
 email: juke2061@colorado.edu
