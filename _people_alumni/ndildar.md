@@ -1,24 +1,17 @@
 ---
 layout: person
 title: Nadia Dildar
-weight: 4
+weight: 21
 position: Organic Geochemistry Lab Manager
 group: staff
-collaborator: yes
-email: nadia.dildar@colorado.edu
-phone: (303) 735-3277
-address: >
-  Organic Geochemistry Lab<br/>
-  4001 Discovery Drive<br/>
-  Room #218, SEEC (Lab wing)<br/>
-  Boulder, CO 80309
 picture:  /images/people/nadia_mountains.jpg
 caption: At Lost Gulch point on Flagstaff Mountain, Colorado
 ---
 
 ## Bio
 
-- **2016-present** - Research Associate, University of Colorado Boulder
+- **2022-present** - Research Associate, University of California
+- **2016-2022** - Research Associate, University of Colorado Boulder
 - **2011-2015** - Postdocoral Researcher, University of Western Ontario
 - **2005-2010** - Ph.D., Organic Geochemistry Unit, University of Bristol
 - **2002-2004** - M.S., University of Engineering and Technology, Lahore

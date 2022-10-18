@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Adeena Chughtai
-weight: 19
+weight: 20
 position: Undergraduate Research Assistant
 group: undergrad
 email: achughtai@student.cccs.edu
