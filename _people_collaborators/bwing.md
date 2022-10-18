@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Boswell Wing
-weight: 4
+weight: 2
 position: Geomicrobial Evolution Lab Principal Investigator
 group: faculty
 collaborator: yes

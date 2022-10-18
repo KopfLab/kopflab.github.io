@@ -1,13 +1,14 @@
 ---
 layout: person
 title: Jamie McFarlin
-weight: 8
-position: Postdoctoral Scholar
-group: postdoc
+weight: 5
+position: Faculty at UWGG & Lab Alumn
+group: faculty
 email: Jamie.McFarlin@colorado.edu
 phone:
 address:
 picture: /images/people/jamie_nw_greenland.jpg
+website: https://twitter.com/jamiemcfarlin
 caption:
 ---
 

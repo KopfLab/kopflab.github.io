@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Lynne Albert
-weight: 6
+weight: 4
 position: Faculty at Red Rocks Community College
 group: postdoc
 collaborator: yes

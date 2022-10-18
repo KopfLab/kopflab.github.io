@@ -4,8 +4,8 @@ title: "Data Visualization (Special Topics Seminar)"
 level: "graduate students"
 weight: 5
 catalog: GEOL 5700-015
-term: Fall 2021
-time: Tu 3-4pm
+term: Spring 2023
+time: TBD
 location: BESC 355
 credits: 1
 picture: /images/teaching/data_vis.png
