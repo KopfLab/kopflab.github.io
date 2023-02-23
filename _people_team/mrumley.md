@@ -1,13 +1,12 @@
 ---
 layout: person
-title: Stephanie Schubert
-weight: 16
+title: Madigan Rumley
+weight: 18
 position: Undergraduate Research Assistant
 group: undergrad
-email: Stephanie.Schubert@colorado.edu
+email: Madigan.Rumley@colorado.edu
 phone:
 address:
-picture: /images/people/stephanie_schubert.jpg
 caption:  
 ---
 
