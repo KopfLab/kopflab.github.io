@@ -3,10 +3,9 @@ layout: class
 title: Microbial Planet Laboratory
 weight: 1
 level: "all levels (general interest research class)"
-catalog: GEOL 3181
-term: Fall 2022
+catalog: [GEOL 3181](https://classes.colorado.edu/?keyword=GEOL%203181)
+term: Fall 2023
 time: Tu / Th 1-3:50pm
-location: BESC 355
 credits: 3
 prerequisites: CHEM 1113/1114 or CHEM 1400/1401
 picture: /images/teaching/microbial_planet_lab.png

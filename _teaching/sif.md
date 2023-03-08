@@ -5,9 +5,8 @@ level: "upper level undergraduate and graduate students"
 catalog: GEOL 5253
 weight: 3
 subtitle: in biogeochemical processes
-term: Fall 2020
+term: taught on demand, usually every few years
 time: Tu/Th 9:30-10:45am
-location: BESC355
 picture: /images/teaching/sif_flyer.jpg
 ---
 
