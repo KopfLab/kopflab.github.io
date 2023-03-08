@@ -3,7 +3,7 @@ layout: class
 title: Geomicrobiology
 level: "upper level undergraduate and graduate students"
 weight: 2
-catalog: GEOL/MCDB/ENVS 4185 / GEOL 5185
+catalog: "<a href='https://classes.colorado.edu/?keyword=GEOL%204185'>GEOL/MCDB/ENVS 4185 / GEOL 5185</a>"
 term: usually every other fall
 time: Tu / Th 2-3:15pm
 credits: 3

@@ -3,7 +3,7 @@ layout: class
 title: Our Microbial Planet
 weight: 0
 level: "all levels (general interest science class)"
-catalog: GEOL 1180
+catalog: "<a href='https://classes.colorado.edu/?keyword=GEOL%201180'>GEOL 1180</a>"
 term: Spring 2023
 time: MWF 1:25-2:15pm
 credits: 3

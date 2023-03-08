@@ -3,7 +3,7 @@ layout: class
 title: "Data Visualization (Special Topics Seminar)"
 level: "graduate students"
 weight: 5
-catalog: GEOL 5700-015
+catalog: GEOL 4700-015/5700-015
 term: Spring 2023
 time: Tu/Th 2-3:15pm
 credits: 1
