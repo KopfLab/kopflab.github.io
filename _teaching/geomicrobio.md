@@ -3,10 +3,9 @@ layout: class
 title: Geomicrobiology
 level: "upper level undergraduate and graduate students"
 weight: 2
-catalog: GEOL/MCDB/ENVS 4185 / GEOL 5185
-term: Spring 2022
+catalog: "<a href='https://classes.colorado.edu/?keyword=GEOL%204185'>GEOL/MCDB/ENVS 4185 / GEOL 5185</a>"
+term: usually every other fall
 time: Tu / Th 2-3:15pm
-location: BESC 355
 credits: 3
 prerequisites: CHEM 1113/1114 or CHEM 1251/1271
 picture: /images/teaching/geomicrobio_flyer.jpg

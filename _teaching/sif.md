@@ -2,12 +2,11 @@
 layout: class
 title: Stable Isotope Fractionation
 level: "upper level undergraduate and graduate students"
-catalog: GEOL 5253
+catalog: "<a href='https://classes.colorado.edu/?keyword=GEOL%205253'>GEOL 5253</a>"
 weight: 3
 subtitle: in biogeochemical processes
-term: Fall 2020
+term: taught on demand, usually every few years
 time: Tu/Th 9:30-10:45am
-location: BESC355
 picture: /images/teaching/sif_flyer.jpg
 ---
 

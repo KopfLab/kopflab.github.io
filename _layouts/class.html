@@ -9,8 +9,10 @@ layout: plain
   {% endif %}
   <h5>
     <strong>Next class</strong>: {{ page.term }} |
-    <strong>Time</strong>: {{ page.time }} |
-    <strong>Location</strong>: {{ page.location }}
+    <strong>Time</strong>: {{ page.time }}
+    {% if page.location %}
+    | <strong>Location</strong>: {{ page.location }}
+    {% endif %}
   </h5>
   {% if page.catalog %}
   <h5><strong>Course #: </strong>{{ page.catalog }}</h5>
