@@ -26,8 +26,10 @@ permalink: /teaching/
     </h5>
     <h5>
       <strong>Next class</strong>: {{ class.term }} |
-      <strong>Time</strong>: {{ class.time }} |
-      <strong>Location</strong>: {{ class.location }}
+      <strong>Time</strong>: {{ class.time }}
+      {% if class.location %}
+      | <strong>Location</strong>: {{ class.location }}
+      {% endif %}
     </h5>
     {% if class.catalog %}
     <h5><strong>Course #: </strong>{{ class.catalog }}</h5>
