@@ -3,7 +3,7 @@ layout: class
 title: Microbial Planet Laboratory
 weight: 1
 level: "all levels (general interest research class)"
-catalog: "[GEOL 3181](https://classes.colorado.edu/?keyword=GEOL%203181)"
+catalog: "<a href='https://classes.colorado.edu/?keyword=GEOL%203181'>GEOL 3181</a>"
 term: Fall 2023
 time: Tu / Th 1-3:50pm
 credits: 3
