@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Adam Younkin
-weight: 7
+weight: 6
 position: Professional Research Assistant
 group: staff
 email: adam.younkin@colorado.edu
