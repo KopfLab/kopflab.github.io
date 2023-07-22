@@ -1,8 +1,8 @@
 ---
 layout: default
-menu: Home
+menu: About
 icon: fa fa-home
-title: Geobiology & Geomicrobial Physiology at CU Boulder
+title: Geomicrobial Physiology at CU Boulder
 title_height: 100px
 image:
   - file: /images/header/home/santa_paula_creek_oil_seep_lowres.jpg
@@ -34,27 +34,19 @@ category: home
 
 <h2> About the Lab </h2>
 
-The Geomicrobial Physiology lab at CU Boulder consists of a <a href="/people">diverse group of researchers</a> from the geological, environmental and microbiological sciences focused on discovering how microorganisms grow in their natural habitats, how they respond to environmental change, and how they produce various types of molecular and isotopic biomarkers - traces of life that are preserved in the environment for millions and sometimes billions of years. The combination of these three lines of scientific inquiry enables us to better reconstruct past environments and helps us predict how microbial life will respond to future change. We also do a fair bit of tools development for geochemical data processing and experimental design in microbiology and strive to make all of our lab designs and software open-source and easily available to advance the pace of discovery. Check out our <a href="/research">research</a>, <a href="/publications">publications</a>, <a href="/resources">resources</a>, and <a href="/people/you">opportunities</a> for more information.
+The Geomicrobial Physiology lab at CU Boulder consists of a diverse group of researchers from the geological, environmental and microbiological sciences focused on discovering how microorganisms grow in their natural habitats, how they respond to environmental change, and how they produce various types of molecular and isotopic biomarkers - traces of life that are preserved in the environment for millions and sometimes billions of years. The combination of these three lines of scientific inquiry enables us to better reconstruct past environments and helps us predict how microbial life will respond to future change. We also do a fair bit of tools development for geochemical data processing and experimental design in microbiology and strive to make our lab designs and software open-source and easily available to advance the pace of discovery. Check out our <a href="/publications">publications</a>, <a href="/resources">resources</a>, and <a href="/people/you">opportunities</a> for more information.
 
+<h2> Who we are </h2>
 
-<h2> Recent News </h2>
+<div class="people-grid">
 
-{% for post in site.posts limit: site.front_page_news %}
-<div class="news-item media">
-  <div class="media-left">
-    <div class="news-date">
-      <div class="day">{{ post.date | date: "%-d"}}</div>
-      <div class="month">{{ post.date | date: "%B"}}</div>
-      <div class="year">{{ post.date | date: "%Y"}}</div>
-    </div>
-  </div>
+	<div class="grid">
+    {% assign people = site.people_team | sort:"weight"  %}
+		{% for person in people %}
+		  {% include grid_person.html person=person %}
+		{% endfor %}
+	</div>
 
-  <div class="media-body">
-  {% if post.link_collection %}
-    {% include page_link_list_item.html item=post %}
-  {% else %}
-    {% include list_item.html item=post %}
-  {% endif %}
-  </div>
+  Also check out our <a href="/people/#collaborators">collaborators</a> and <a href="/people/#alumni">lab alumni</a> to learn more about the lab.
+
 </div>
-{% endfor %}

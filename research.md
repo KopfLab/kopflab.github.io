@@ -1,6 +1,5 @@
 ---
 layout: default
-menu: Research
 icon: fa fa-area-chart
 weight: 2
 title: Research
