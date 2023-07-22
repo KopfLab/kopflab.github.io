@@ -1,6 +1,7 @@
 ---
 layout: resource
-title: Earth Systems Stable Isotope Laboratory (CUBES-SIL)
+title: Earth Systems Stable Isotope Laboratory
+subtitle: (CUBES-SIL)
 weight: 2
 picture: /images/resources/overview/cubessil_lab.jpeg
 ---

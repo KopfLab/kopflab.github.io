@@ -1,13 +1,12 @@
 ---
 layout: resource
-title: Geomicrobiology Lab (GEOM)
+title: Geomicrobiology Lab
+subtitle: (GEOM)
 weight: 1
 picture: /images/resources/overview/geom_lab.jpg
 ---
 
-The Geomicorobiology culturing lab is a central resource for the Geobiology community at CU Boulder and beyond that is jointly directed by Profs. [Sebastian Kopf](/people/skopf) and [Boswell Wing](/people/bwing). The lab currently occupies ~2000 sq. ft. of newly renovated laboratory space in the Benson Earth Sciences building with.
-
-This wet chemistry lab was specifically designed for culturing of environmentally relevant microorganisms, continuous culture, sample preparation, microscopy, microbial substrate & product quantification, and molecular work.
+The Geomicorobiology culturing lab is a central resource for the Geobiology community at CU Boulder and beyond that is jointly directed by Profs. [Sebastian Kopf](/people/skopf) and [Boswell Wing](/people/bwing). The lab occupies ~2000 sq. ft. of newly renovated laboratory space in the Benson Earth Sciences building and was specifically designed for culturing of environmentally relevant microorganisms, continuous culture, sample preparation, microscopy, microbial substrate & product quantification, and molecular work.
 
 The available equipment comprises standard geochemical and culturing infrastructure including analytical balances, pH meters, a chemical fume hood (8’), laminar flow biosafety cabinet (4’), refrigerators (4C), freezers (-20C), two ultra low temperature (ULT) freezers, temperature controlled shaking incubators, drying oven, muffle furnace, freeze-drier, water purification system, water baths, ultrasonic baths, refrigerated centrifuge, microcentrifuges and a 120L autoclave; molecular equipment including gel imager, electrophoresis equipment, gradient PCR machine, and quantitative realtime PCR (qPCR); and microscopy equipment including a phase contrast light microscope (Zeiss PrimoStar) and inverted fluorescence microscope (Zeiss AxioVert 200M).
 

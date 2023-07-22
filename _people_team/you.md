@@ -7,7 +7,7 @@ group: grad
 email: sebastian.kopf@colorado.edu
 ---
 
-Interested in the Geomicrobial Physiology / Organic Geochemistry Lab in beautiful Boulder, Colorado? Please check the information below and contact [Sebastian](/people/skopf) via email to introduce yourself and inquire about opportunities (please attach a current CV in PDF format).
+Interested in the Geomicrobial Physiology Lab in beautiful Boulder, Colorado? Please check the information below and contact [Sebastian](/people/skopf) via email to introduce yourself and inquire about opportunities (please attach a current CV in PDF format). Note that I will not be recruiting new students until Fall 2025.
 
 ## Undergraduate Students
 
