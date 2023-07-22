@@ -1,6 +1,6 @@
 ---
 title: Lab Web Applications
 layout: iframe
-link: https://labapps.kopflab.org
+link: https://apps.kopflab.org
 hidden: true
 ---

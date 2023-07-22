@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Jamie McFarlin
-weight: 5
+weight: 4
 position: Faculty at UWGG & Lab Alumn
 group: faculty
 email: Jamie.McFarlin@colorado.edu
