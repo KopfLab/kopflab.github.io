@@ -4,7 +4,8 @@ title: Kristýna Kantnerová
 weight: 16
 position: Postdoctoral Fellow
 group: postdoc
-website: https://pkc.vscht.cz/osobni-rozvoj/mentoring/mentori/kristyna-kantnerova
+email: Kristyna.Kantnerova@colorado.edu
+website: https://scholar.google.com/citations?user=RCXhPjkAAAAJ&hl=en
 phone:
 address:
 picture:
