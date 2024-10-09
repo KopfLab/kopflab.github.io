@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Jesse Colangelo
-weight: 17
+weight: 32
 position: Postdoctoral Fellow
 group: postdoc
 collaborator: yes

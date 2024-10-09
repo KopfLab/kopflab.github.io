@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Nadia Dildar
-weight: 21
+weight: 33
 position: Organic Geochemistry Lab Manager
 group: staff
 picture:  /images/people/nadia_mountains.jpg

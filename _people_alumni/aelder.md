@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Alec Elder
-weight: 15
+weight: 115
 position: Undergraduate Research Assistant
 group: undergrad
 email: Alec.Elder@colorado.edu

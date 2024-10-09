@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Chris Mulligan
-weight: 15
+weight: 116
 position: Undergraduate Research Assistant
 group: undergrad
 email: christopher.mulligan@colorado.edu

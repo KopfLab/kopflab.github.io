@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Emma Bertran
-weight: 18
+weight: 31
 position: Postdoctoral Scholar, Princeton University
 group: postdoc
 collaborator: yes

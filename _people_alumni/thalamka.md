@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Toby Halamka
-weight: 11
+weight: 2
 position: Graduate Student
 group: grad
 email: toby.halamka@bristol.ac.uk

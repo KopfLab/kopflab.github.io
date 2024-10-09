@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Kasdi Nata Sujono
-weight: 13
+weight: 113
 position: Honors Thesis Student
 group: undergrad
 email: kasu0117@colorado.edu

@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Tristan Caro
-weight: 12
+weight: 3
 position: IQBio Graduate Student
 group: grad
 email: tristan.caro@colorado.edu

@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Kelsey Dahlgren
-weight: 7
+weight: 22
 position: IQBio Rotation Student
 group: grad
 email: Kelsey.Dahlgren@colorado.edu
