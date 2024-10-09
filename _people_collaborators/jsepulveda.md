@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Julio Sepúlveda
-weight: 3
+weight: 6
 position: Organic Geochemistry Lab Principal Investigator
 group: faculty
 collaborator: yes

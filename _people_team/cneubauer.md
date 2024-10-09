@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Caj Neubauer
-weight: 14
+weight: 15
 position: Research Affiliate
 group: postdoc
 collaborator: yes

@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Jeemin Rhim
-weight: 6
+weight: 7
 position: Postdoctoral Fellow, Dartmouth College
 group: postdoc
 collaborator: yes
