@@ -1,13 +1,12 @@
 ---
 layout: person
-title: Chris Mulligan
-weight: 116
+title: Aspasia Vazquez
+weight: 20
 position: Undergraduate Research Assistant
 group: undergrad
-email: christopher.mulligan@colorado.edu
+email: Aspasia.Vazquez@colorado.edu
 phone:
 address:
-picture: /images/people/chris_mulligan.jpg
 caption:  
 ---
 

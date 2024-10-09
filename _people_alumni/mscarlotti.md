@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Madison Scarlotti
-weight: 24
+weight: 125
 position: Undergraduate Research Assistant
 group: undergrad
 email:

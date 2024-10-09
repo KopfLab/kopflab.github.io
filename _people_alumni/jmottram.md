@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Josie Mottram
-weight: 16
+weight: 116
 position: Summer Research Assistant
 group: undergrad
 email: josie.mottram@colorado.edu

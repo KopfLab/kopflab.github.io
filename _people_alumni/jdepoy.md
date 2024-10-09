@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Joely Depoy
-weight: 14
+weight: 114
 position: Undergraduate Research Assistant
 group: undergrad
 email: Joely.Depoy@colorado.edu

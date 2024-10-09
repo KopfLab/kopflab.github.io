@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Corinne Walsh
-weight: 10
+weight: 21
 position: IQBio Rotation Student
 group: grad
 email: Corinne.Walsh@colorado.edu

@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Kristýna Kantnerová
-weight: 16
+weight: 34
 position: Postdoctoral Fellow
 group: postdoc
 email: Kristyna.Kantnerova@colorado.edu

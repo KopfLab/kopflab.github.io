@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Harp Batther
-weight: 13
+weight: 9
 position: Graduate Student
 group: grad
 email: harpreet.batther@colorado.edu

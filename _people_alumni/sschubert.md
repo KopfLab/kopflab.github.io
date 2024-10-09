@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Stephanie Schubert
-weight: 22
+weight: 122
 position: Undergraduate Research Assistant
 group: undergrad
 email: Stephanie.Schubert@colorado.edu
