@@ -2,7 +2,7 @@
 layout: class
 title: Computational Tools
 level: "graduate students"
-weight: 4
+weight: 5
 catalog: "<a href='https://classes.colorado.edu/?keyword=GEOL%205042'>GEOL 5042</a>"
 term: taught on demand, usually every few years
 time: Tu 2-3:15pm, Th 12:30-1:45pm
