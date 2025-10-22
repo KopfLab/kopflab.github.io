@@ -3,7 +3,7 @@ layout: class
 title: "Data Visualization for Earth and Environmental Scientists"
 level: "graduate students"
 weight: 4
-catalog: GEOL/EBIO 4444/5444
+catalog: "<a href='https://classes.colorado.edu/?keyword=GEOL%205444'>GEOL/EBIO 4444/5444</a>"
 term: Every other spring (typically even years)
 time: Tu/Th 11:00 AM - 12:15 PM
 credits: 1
