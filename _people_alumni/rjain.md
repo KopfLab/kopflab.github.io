@@ -1,11 +1,11 @@
 ---
 layout: person
 title: Rohan Jain
-weight: 13
+weight: 23
 position: Software Developer
 group: grad
 email: Rohan.Jain@colorado.edu
-website: https://github.com/rohanjain11
+website: https://www.linkedin.com/in/rohan-jain11/
 phone:
 address:
 caption:
