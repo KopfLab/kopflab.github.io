@@ -14,4 +14,3 @@ caption:
 
 Hello! My name is Millie and I am studying Environmental Engineering. My goal is to work in microbial ecology. Outside of school, I enjoy reading, salsa dancing, and, of course, snowboarding.
 
-## About
