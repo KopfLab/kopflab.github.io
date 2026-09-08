@@ -25,6 +25,15 @@ front_page_news: 5
 # Build settings
 markdown: kramdown
 
+# Files not copied into the built site
+# (note: setting `exclude` replaces jekyll's defaults, so they are repeated here)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - netlify.toml
+  - vendor
+  - node_modules
+
 # Sitemap
 plugins:
   - jekyll-sitemap

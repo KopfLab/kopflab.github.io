@@ -1,0 +1,8 @@
+# Netlify build configuration (takes precedence over the build settings in the Netlify UI)
+# The build image installs gems with bundler into a cache path whose bin dir is not on
+# PATH, so jekyll must be invoked through `bundle exec` (a bare `jekyll build` fails
+# with "jekyll: command not found").
+
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
